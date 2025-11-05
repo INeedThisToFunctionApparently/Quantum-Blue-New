@@ -505,9 +505,9 @@
       - id: ReagentSlimeDrGibb
         prob: 1
         orGroup: ReagentSlimes
-      - id: ReagentSlimeBrosochloricBros
-        prob: 1
-        orGroup: ReagentSlimes
+#      - id: ReagentSlimeBrosochloricBros
+#        prob: 1
+#        orGroup: ReagentSlimes
       - id: ReagentSlimeJuiceThatMakesYouWeh
         prob: 1
         orGroup: ReagentSlimes
@@ -520,9 +520,9 @@
       - id: ReagentSlimeIpecac
         prob: 1
         orGroup: ReagentSlimes
-      - id: ReagentSlimeJuiceThatMakesYouUngh
-        prob: 1
-        orGroup: ReagentSlimes
+#      - id: ReagentSlimeJuiceThatMakesYouUngh
+#        prob: 1
+#        orGroup: ReagentSlimes
       - id: ReagentSlimeCoffee
         prob: 1
         orGroup: ReagentSlimes

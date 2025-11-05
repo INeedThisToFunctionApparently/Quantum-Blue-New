@@ -1,19 +1,19 @@
-﻿- type: entity
-  id: SpaceBladeBROS
-  parent: SpaceBlade
-  suffix: bros
-  description: Let it UNGH
-  components:
-  - type: Sprite
-    state: brosblade
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/_Impstation/Animals/bros_hurt.ogg
-  - type: UseDelay
-    delay: 2.0
-  - type: DamageOtherOnHit
-    soundHit:
-      path: /Audio/_Impstation/Animals/bros_hit.ogg
+﻿#- type: entity
+#  id: SpaceBladeBROS
+#  parent: SpaceBlade
+#  suffix: bros
+#  description: Let it UNGH
+#  components:
+#  - type: Sprite
+#    state: brosblade
+#  - type: EmitSoundOnUse
+#    sound:
+#      path: /Audio/_Impstation/Animals/bros_hurt.ogg
+#  - type: UseDelay
+#    delay: 2.0
+#  - type: DamageOtherOnHit
+#    soundHit:
+#      path: /Audio/_Impstation/Animals/bros_hit.ogg
 
 - type: entity
   id: SpaceBladeGay

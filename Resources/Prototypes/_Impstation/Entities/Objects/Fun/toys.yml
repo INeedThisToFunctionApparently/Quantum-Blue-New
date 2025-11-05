@@ -1006,93 +1006,93 @@
     stealGroup: Plushie
   - type: DamageOtherOnHit
 
-- type: entity
-  parent: BasePlushie
-  id: PlushieBros
-  name: BROS plushie
-  description: OH FUCK IT'S BR- Oh nevermind it's just a plushie.
-  components:
-  - type: Sprite
-    sprite:  _Impstation/Mobs/Animals/bros.rsi
-    state: bros
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 10
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 5
-        - ReagentId: JuiceThatMakesYouUngh
-          Quantity: 5
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/_Impstation/Animals/bros_hurt.ogg
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/_Impstation/Animals/bros_hit.ogg
-  - type: EmitSoundOnCollide
-    sound:
-      path: /Audio/_Impstation/Animals/bros_hit.ogg
-  - type: Edible
-    requiresSpecialDigestion: true
-    useSound:
-      path: /Audio/_Impstation/Animals/bros_hurt.ogg
-  - type: FlavorProfile
-    flavors:
-      - brotherly
-  - type: FoodSequenceElement
-    entries:
-      CottonBurger: BrosPlushie
-  - type: MeleeWeapon
-    altDisarm: false
-    angle: 0
-    animation: WeaponArcPunch
-    soundHit:
-      path: /Audio/_Impstation/Animals/bros_hit.ogg
-
-- type: entity
-  parent: BasePlushie
-  id: PlushieSorb
-  name: SORB plushie
-  description: .eihsulp a tsuj s'ti dnimreven hO -RB S'TI KCUF HO
-  components:
-  - type: Sprite
-    sprite:  _Impstation/Mobs/Animals/bros.rsi
-    state: sorb
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 10
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 5
-        - ReagentId: JuiceThatMakesYouUngh
-          Quantity: 5
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/_Impstation/Animals/bros_hurt.ogg
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/_Impstation/Animals/bros_hit.ogg
-  - type: EmitSoundOnCollide
-    sound:
-      path: /Audio/_Impstation/Animals/bros_hit.ogg
-  - type: Edible
-    requiresSpecialDigestion: true
-    useSound:
-      path: /Audio/_Impstation/Animals/bros_hurt.ogg
-  - type: FlavorProfile
-    flavors:
-      - brotherly
-  - type: FoodSequenceElement
-    entries:
-      CottonBurger: SorbPlushie
-  - type: MeleeWeapon
-    altDisarm: false
-    angle: 0
-    animation: WeaponArcPunch
-    soundHit:
-      path: /Audio/_Impstation/Animals/bros_hit.ogg
+#- type: entity
+#  parent: BasePlushie
+#  id: PlushieBros
+#  name: BROS plushie
+#  description: OH FUCK IT'S BR- Oh nevermind it's just a plushie.
+#  components:
+#  - type: Sprite
+#    sprite:  _Impstation/Mobs/Animals/bros.rsi
+#    state: bros
+#  - type: SolutionContainerManager
+#    solutions:
+#      food:
+#        maxVol: 10
+#        reagents:
+#        - ReagentId: Fiber
+#          Quantity: 5
+#        - ReagentId: JuiceThatMakesYouUngh
+#          Quantity: 5
+#  - type: EmitSoundOnUse
+#    sound:
+#      path: /Audio/_Impstation/Animals/bros_hurt.ogg
+#  - type: EmitSoundOnLand
+#    sound:
+#      path: /Audio/_Impstation/Animals/bros_hit.ogg
+#  - type: EmitSoundOnCollide
+#    sound:
+#      path: /Audio/_Impstation/Animals/bros_hit.ogg
+#  - type: Edible
+#    requiresSpecialDigestion: true
+#    useSound:
+#      path: /Audio/_Impstation/Animals/bros_hurt.ogg
+#  - type: FlavorProfile
+#    flavors:
+#      - brotherly
+#  - type: FoodSequenceElement
+#    entries:
+#      CottonBurger: BrosPlushie
+#  - type: MeleeWeapon
+#    altDisarm: false
+#    angle: 0
+#    animation: WeaponArcPunch
+#    soundHit:
+#      path: /Audio/_Impstation/Animals/bros_hit.ogg
+#
+#- type: entity
+#  parent: BasePlushie
+#  id: PlushieSorb
+#  name: SORB plushie
+#  description: .eihsulp a tsuj s'ti dnimreven hO -RB S'TI KCUF HO
+#  components:
+#  - type: Sprite
+#    sprite:  _Impstation/Mobs/Animals/bros.rsi
+#    state: sorb
+#  - type: SolutionContainerManager
+#    solutions:
+#      food:
+#        maxVol: 10
+#        reagents:
+#        - ReagentId: Fiber
+#          Quantity: 5
+#        - ReagentId: JuiceThatMakesYouUngh
+#          Quantity: 5
+#  - type: EmitSoundOnUse
+#    sound:
+#      path: /Audio/_Impstation/Animals/bros_hurt.ogg
+#  - type: EmitSoundOnLand
+#    sound:
+#      path: /Audio/_Impstation/Animals/bros_hit.ogg
+#  - type: EmitSoundOnCollide
+#    sound:
+#      path: /Audio/_Impstation/Animals/bros_hit.ogg
+#  - type: Edible
+#    requiresSpecialDigestion: true
+#    useSound:
+#      path: /Audio/_Impstation/Animals/bros_hurt.ogg
+#  - type: FlavorProfile
+#    flavors:
+#      - brotherly
+#  - type: FoodSequenceElement
+#    entries:
+#      CottonBurger: SorbPlushie
+#  - type: MeleeWeapon
+#    altDisarm: false
+#    angle: 0
+#    animation: WeaponArcPunch
+#    soundHit:
+#      path: /Audio/_Impstation/Animals/bros_hit.ogg
 
 - type: entity
   parent: BasePlushie

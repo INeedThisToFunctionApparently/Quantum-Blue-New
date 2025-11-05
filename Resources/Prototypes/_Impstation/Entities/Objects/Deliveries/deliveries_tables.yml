@@ -236,8 +236,8 @@
       - id: MobSnake
       - id: MobLizard
       - id: MobFrog
-    - id: MobBros
-      weight: 0.1
+#    - id: MobBros
+#      weight: 0.1
     - id: MobAngryBee
       weight: 0.1
 # toys

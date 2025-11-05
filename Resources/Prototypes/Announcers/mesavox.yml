@@ -116,8 +116,8 @@
       path: events/vent_critters.ogg
     - id: snailMigrationLowPop # Adorable little snails are appearing in vents
       path: events/vent_critters.ogg
-    - id: brosSpawn # BROS are appearing in vents. UNGH
-      path: events/vent_critters.ogg
+#    - id: brosSpawn # BROS are appearing in vents. UNGH
+#      path: events/vent_critters.ogg
     - id: immovableRodSpawn # The station is moving into an immovable rod, don't die or something, ask Engineering for help repairing it
       path: events/immovable_rod.ogg
     - id: ionStorm # AI-controlled equipment are now weird, check their laws

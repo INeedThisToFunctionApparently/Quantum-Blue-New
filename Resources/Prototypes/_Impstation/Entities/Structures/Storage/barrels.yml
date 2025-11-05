@@ -78,7 +78,7 @@
     - id: BarrelChemFilledJuiceThatMakesYouHew
     - id: BarrelChemFilledLaughter
     # Imp Fun
-    - id: BarrelChemFilledJuiceThatMakesYouUngh
+#    - id: BarrelChemFilledJuiceThatMakesYouUngh
     - id: BarrelChemFilledMouseBites
     - id: BarrelChemFilledSadness
     # Narcotics
@@ -853,18 +853,18 @@
           Quantity: 500
 
 # Imp Fun
-- type: entity
-  parent: BarrelChemBlackEmpty
-  id: BarrelChemFilledJuiceThatMakesYouUngh
-  suffix: JuiceThatMakesYouUngh
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        maxVol: 500
-        reagents:
-        - ReagentId: JuiceThatMakesYouUngh
-          Quantity: 500
+#- type: entity
+#  parent: BarrelChemBlackEmpty
+#  id: BarrelChemFilledJuiceThatMakesYouUngh
+#  suffix: JuiceThatMakesYouUngh
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      tank:
+#        maxVol: 500
+#        reagents:
+#        - ReagentId: JuiceThatMakesYouUngh
+#          Quantity: 500
 
 - type: entity
   parent: BarrelChemPinkEmpty
