@@ -1,15 +1,15 @@
-# Polymorph for juice that makes you UNGH
-- type: polymorph
-  id: PolymorphBros
-  configuration:
-    entity: MobBrosPoly
-    forced: true
-    transferName: true
-    transferHumanoidAppearance: true
-    inventory: None
-    revertOnDeath: true
-    revertOnCrit: true
-    duration: 20
+## Polymorph for juice that makes you UNGH
+#- type: polymorph
+#  id: PolymorphBros
+#  configuration:
+#    entity: MobBrosPoly
+#    forced: true
+#    transferName: true
+#    transferHumanoidAppearance: true
+#    inventory: None
+#    revertOnDeath: true
+#    revertOnCrit: true
+#    duration: 20
 
 # Artifact polymorphs
 - type: polymorph

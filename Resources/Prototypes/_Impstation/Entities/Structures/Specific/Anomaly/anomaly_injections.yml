@@ -30,7 +30,7 @@
     - ChlorineTrifluoride
     - FoamingAgent
     - BuzzochloricBees
-    - BrosochloricBros
+#    - BrosochloricBros
     - RobustHarvest
     usefulChemicals:
     - Cryptobiolin
@@ -69,7 +69,7 @@
     - Testosterone
     - Estradiol
     - Genderfluid
-    - JuiceThatMakesYouUngh
+#    - JuiceThatMakesYouUngh
   - type: Edible
     edible: Drink
     solution: anomaly
