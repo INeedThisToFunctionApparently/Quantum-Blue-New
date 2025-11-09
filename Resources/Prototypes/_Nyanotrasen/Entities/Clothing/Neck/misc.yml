@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: InertShockCollar
+  name: inert shock collar
+  description: It looks like someone took the electronics out.
+  components:
+  - type: Sprite
+    sprite: _Nyanotrasen/Clothing/Neck/Misc/shock.rsi
+  - type: Clothing
+    sprite: _Nyanotrasen/Clothing/Neck/Misc/shock.rsi
