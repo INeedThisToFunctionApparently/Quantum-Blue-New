@@ -38,17 +38,17 @@
       collection: WeakHit
     forceSound: true
 
-- type: entity
-  name : ouroBROSbolt
-  id: BulletOuroBros
-  parent: BulletOuroboros
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: SpawnOnTrigger
-    proto: FoesSeofSpawner #override the MobBeeroboros
-  - type: SpawnEntityTableOnTrigger
-    table: !type:AllSelector
-      children:
-      - id: FoesSeofSpawner #this plus the spawn on trigger = amount 2
-    keysIn:
-    - trigger
+#- type: entity
+#  name : ouroBROSbolt
+#  id: BulletOuroBros
+#  parent: BulletOuroboros
+#  categories: [ HideSpawnMenu ]
+#  components:
+#  - type: SpawnOnTrigger
+#    proto: FoesSeofSpawner #override the MobBeeroboros
+#  - type: SpawnEntityTableOnTrigger
+#    table: !type:AllSelector
+#      children:
+#      - id: FoesSeofSpawner #this plus the spawn on trigger = amount 2
+#    keysIn:
+#    - trigger

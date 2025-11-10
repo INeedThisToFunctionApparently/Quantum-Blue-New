@@ -1,83 +1,83 @@
-- type: reagent
-  id: BrosochloricBros
-  name: reagent-name-brosochloric-bros
-  group: Toxins
-  desc: reagent-desc-brosochloric-bros
-  physicalDesc: reagent-physical-desc-really-cruddy
-  flavor: crud
-  color: "#47181A"
-  contrabandSeverity: Minor
-  tileReactions:
-  - !type:CreateEntityTileReaction
-    entity: BrosSorbSpawner
-    usage: 2
-    maxOnTile: 2
-    randomOffsetMax: 0.3
-    maxOnTileWhitelist:
-      tags: [ BROS ]
-  metabolisms:
-    Poison:
-      effects:
-      - !type:PopupMessage
-        type: Local
-        visualType: MediumCaution
-        messages:
-        - "brosochloricbros-effect-oh-fuck"
-        - "brosochloricbros-effect-ungh"
-        probability: 0.1
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: 2
-            Blunt: 1
-        conditions:
-        - !type:HasTag
-          invert: true
-          tag: BROS
+#- type: reagent
+#  id: BrosochloricBros
+#  name: reagent-name-brosochloric-bros
+#  group: Toxins
+#  desc: reagent-desc-brosochloric-bros
+#  physicalDesc: reagent-physical-desc-really-cruddy
+#  flavor: crud
+#  color: "#47181A"
+#  contrabandSeverity: Minor
+#  tileReactions:
+#  - !type:CreateEntityTileReaction
+#    entity: BrosSorbSpawner
+#    usage: 2
+#    maxOnTile: 2
+#    randomOffsetMax: 0.3
+#    maxOnTileWhitelist:
+#      tags: [ BROS ]
+#  metabolisms:
+#    Poison:
+#      effects:
+#      - !type:PopupMessage
+#        type: Local
+#        visualType: MediumCaution
+#        messages:
+#        - "brosochloricbros-effect-oh-fuck"
+#        - "brosochloricbros-effect-ungh"
+#        probability: 0.1
+#      - !type:HealthChange
+#        damage:
+#          types:
+#            Poison: 2
+#            Blunt: 1
+#        conditions:
+#        - !type:HasTag
+#          invert: true
+#          tag: BROS
 
-- type: reagent
-  id: GroundBros
-  name: reagent-name-ground-bros
-  desc: reagent-desc-ground-bros
-  physicalDesc: reagent-physical-desc-cruddy
-  flavor: crud
-  color: "#5F2123"
-  metabolisms:
-    Poison:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: 1
+#- type: reagent
+#  id: GroundBros
+#  name: reagent-name-ground-bros
+#  desc: reagent-desc-ground-bros
+#  physicalDesc: reagent-physical-desc-cruddy
+#  flavor: crud
+#  color: "#5F2123"
+#  metabolisms:
+#    Poison:
+#      effects:
+#      - !type:HealthChange
+#        damage:
+#          types:
+#            Poison: 1
 
-- type: reagent
-  id: JuiceThatMakesYouUngh
-  name: reagent-name-ungh-juice
-  group: Toxins
-  desc: reagent-desc-ungh-juice
-  physicalDesc: reagent-physical-desc-brotherly
-  flavor: brotherly
-  color: "#8f3134"
-  metabolisms:
-    Poison:
-      metabolismRate: 0.25
-      effects:
-      - !type:Emote
-        emote: Ungh
-        showInChat: true
-        force: true
-        probability: 0.5
-      - !type:Polymorph
-        prototype: PolymorphBros
-        conditions:
-        - !type:ReagentThreshold
-          min: 50
-      - !type:AdjustReagent
-        reagent: JuiceThatMakesYouUngh
-        amount: -20
-        conditions:
-        - !type:ReagentThreshold
-          min: 50
+#- type: reagent
+#  id: JuiceThatMakesYouUngh
+#  name: reagent-name-ungh-juice
+#  group: Toxins
+#  desc: reagent-desc-ungh-juice
+#  physicalDesc: reagent-physical-desc-brotherly
+#  flavor: brotherly
+#  color: "#8f3134"
+#  metabolisms:
+#    Poison:
+#      metabolismRate: 0.25
+#      effects:
+#      - !type:Emote
+#        emote: Ungh
+#        showInChat: true
+#        force: true
+#        probability: 0.5
+#      - !type:Polymorph
+#        prototype: PolymorphBros
+#        conditions:
+#        - !type:ReagentThreshold
+#          min: 50
+#      - !type:AdjustReagent
+#        reagent: JuiceThatMakesYouUngh
+#        amount: -20
+#        conditions:
+#        - !type:ReagentThreshold
+#          min: 50
 
 - type: reagent
   id: PropulsionGel

@@ -120,8 +120,8 @@
 
 
     ## Vent Critters
-    - id: brosSpawn # BROS are appearing in vents. UNGH
-      collection: SinisterVentcrittersAnnouncements
+#    - id: brosSpawn # BROS are appearing in vents. UNGH
+#      collection: SinisterVentcrittersAnnouncements
     - id: mouseMigration # Several mice have appeared in a random place
       collection: SinisterVentcrittersAnnouncements
     - id: cockroachMigration # Several cockroaches have appeared in a random place

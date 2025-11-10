@@ -239,8 +239,8 @@
     replaceDescription: false
     reagents:
     - SpaceDrugs
-    - BrosochloricBros
-    - JuiceThatMakesYouUngh
+#    - BrosochloricBros
+#    - JuiceThatMakesYouUngh
     - Nocturine
     - MuteToxin
     - Phlogiston
