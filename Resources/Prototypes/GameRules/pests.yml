@@ -18,7 +18,7 @@
     children:
     - id: BoarSpawn #imp
     - id: BombadilloSpawn #imp
-    - id: BrosSpawn #imp
+    #- id: BrosSpawn #imp
     - id: SnailMigration
     - id: SnakeSpawn #imp
     - id: SlimesSpawn #imp
