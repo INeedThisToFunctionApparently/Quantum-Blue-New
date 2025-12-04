@@ -18,7 +18,7 @@
   - Thaven # imp
   - Ungu # imp
   - Vox
-  #- Vulpkanin # imp, disabled roundstart
+  - Vulpkanin # imp, disabled roundstart
 
 - type: guideEntry
   id: Arachnid

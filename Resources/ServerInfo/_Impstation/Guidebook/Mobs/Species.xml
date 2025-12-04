@@ -1,4 +1,4 @@
-<Document>
+  <Document>
   # Species
 
   Nanotrasen employs a variety of sapient species.
@@ -23,5 +23,6 @@
     <GuideEntityEmbed Entity="MobThaven" Caption="Thaven"/>
     <GuideEntityEmbed Entity="MobUngu" Caption="Ungu"/>
     <GuideEntityEmbed Entity="MobVox" Caption="Vox"/>
+    <GuideEntityEmbed Entity="MobVulpkanin" Caption="Vulpkanin"/>
   </Box>
 </Document>
