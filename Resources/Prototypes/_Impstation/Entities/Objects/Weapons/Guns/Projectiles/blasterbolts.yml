@@ -144,8 +144,8 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 25
-        Structural: 75
+        Blunt: 22
+        Structural: 50
 
 - type: entity
   name : flare shot
