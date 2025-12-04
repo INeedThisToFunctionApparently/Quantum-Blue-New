@@ -1,6 +1,5 @@
 using Content.Shared.Cargo.Prototypes;
 using Robust.Shared.Prototypes;
-using Content.Shared.Radio; // imp edit
 
 namespace Content.Shared.Cargo.Components;
 
@@ -39,9 +38,4 @@ public sealed partial class CargoSlipComponent : Component
     /// </summary>
     [DataField]
     public ProtoId<CargoAccountPrototype> Account;
-
-    /// <summary>
-    /// Imp addition. Radio channel which receives the order announcement.
-    /// </summary>
-    public ProtoId<RadioChannelPrototype> AnnouncementChannel;
 }
