@@ -3,7 +3,7 @@
   name: Kvass tank crate
   description: A tank with refreshing kvass, which helps so much in the heat.
   icon:
-    sprite: DeltaV/Structures/Storage/kvass.rsi
+    sprite: _DV/Structures/Storage/kvass.rsi
     state: kvass
   product: KvassTankFull
   cost: 2000
