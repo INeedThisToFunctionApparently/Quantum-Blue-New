@@ -122,7 +122,7 @@
     - id: ChemSampleTubeTHC
     - id: ChemSampleTubeFluorosurfactant
     - id: ChemSampleTubeFoamingAgent
-    - id: ChemSampleTubeBrosochloricBros
+#    - id: ChemSampleTubeBrosochloricBros
     - id: ChemSampleTubeButterflies
     - id: ChemSampleTubeEthanotoxin
     - id: ChemSampleTubeGastroToxin
@@ -138,7 +138,7 @@
     - id: ChemSampleTubeMucin
     - id: ChemSampleTubeSedin
     - id: ChemSampleTubeGroundBee
-    - id: ChemSampleTubeGroundBros
+#    - id: ChemSampleTubeGroundBros
     - id: ChemSampleTubeIrwizine
     - id: ChemSampleTubeMouseBites
     - id: ChemSampleTubeNitrousOxide
@@ -690,20 +690,20 @@
   - type: Label
     currentLabel: Highly Reactive With Metal, Handle With Care
 
-- type: entity
-  parent: ChemSampleTube
-  id: ChemSampleTubeBrosochloricBros
-  suffix: BrosochloricBros
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      beaker:
-        maxVol: 10
-        reagents:
-        - ReagentId: BrosochloricBros
-          Quantity: 10
-  - type: Label
-    currentLabel: Botanical Sample, Handle With Care
+#- type: entity
+#  parent: ChemSampleTube
+#  id: ChemSampleTubeBrosochloricBros
+#  suffix: BrosochloricBros
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      beaker:
+#        maxVol: 10
+#        reagents:
+#        - ReagentId: BrosochloricBros
+#          Quantity: 10
+#  - type: Label
+#    currentLabel: Botanical Sample, Handle With Care
 
 - type: entity
   parent: ChemSampleTube
@@ -930,20 +930,20 @@
   - type: Label
     currentLabel: Biological Sample, Handle With Care
     
-- type: entity
-  parent: ChemSampleTube
-  id: ChemSampleTubeGroundBros
-  suffix: GroundBros
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      beaker:
-        maxVol: 10
-        reagents:
-        - ReagentId: GroundBros
-          Quantity: 10
-  - type: Label
-    currentLabel: Botanical Sample, Handle With Care
+#- type: entity
+#  parent: ChemSampleTube
+#  id: ChemSampleTubeGroundBros
+#  suffix: GroundBros
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      beaker:
+#        maxVol: 10
+#        reagents:
+#        - ReagentId: GroundBros
+#          Quantity: 10
+#  - type: Label
+#    currentLabel: Botanical Sample, Handle With Care
 
 - type: entity
   parent: ChemSampleTube

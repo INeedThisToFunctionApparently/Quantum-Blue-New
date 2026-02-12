@@ -2,7 +2,7 @@
   id: BaseSecurityBartenderZookeeperContraband
   parent: BaseRestrictedContraband
   abstract: true
-  components:
-  - type: Contraband
-    allowedDepartments: [ Security ]
-    allowedJobs: [ Bartender, Zookeeper ]
+#  components: QB: disabling valid vision
+#  - type: Contraband
+#    allowedDepartments: [ Security ]
+#    allowedJobs: [ Bartender, Zookeeper ]

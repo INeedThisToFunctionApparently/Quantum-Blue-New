@@ -148,6 +148,9 @@
   id: Electropack
 
 - type: Tag
+  id: EncryptionKeyRevolution # QB: Adding this back manually until the real revert.
+
+- type: Tag
   id: EvidenceMarker
 
 - type: Tag

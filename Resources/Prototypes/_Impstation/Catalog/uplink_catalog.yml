@@ -185,20 +185,20 @@
   categories:
     - UplinkWeaponry
 
-- type: listing
-  id: UplinkOuroBros
-  name: uplink-ourobros-name
-  description: uplink-ourobros-desc
-  productEntity: WeaponSpecialOuroBros
-  cost:
-    Telecrystal: 30
-  categories:
-  - UplinkWeaponry
-  conditions: # surplus exclusive
-  - !type:BuyerWhitelistCondition
-    whitelist:
-      components:
-      - SurplusBundle
+#- type: listing
+#  id: UplinkOuroBros
+#  name: uplink-ourobros-name
+#  description: uplink-ourobros-desc
+#  productEntity: WeaponSpecialOuroBros
+#  cost:
+#    Telecrystal: 30
+#  categories:
+#  - UplinkWeaponry
+#  conditions: # surplus exclusive
+#  - !type:BuyerWhitelistCondition
+#    whitelist:
+#      components:
+#      - SurplusBundle
 
 
 
@@ -358,20 +358,20 @@
   categories:
   - UplinkExplosives
 
-- type: listing
-  id: UplinkBrosGrenade
-  name: uplink-bros-grenade-name
-  description: uplink-bros-grenade-desc
-  productEntity: BrosGrenade
-  cost:
-    Telecrystal: 14
-  categories:
-  - UplinkExplosives
-  conditions:
-  - !type:StoreWhitelistCondition
-    blacklist:
-      tags:
-      - NukeOpsUplink
+#- type: listing
+#  id: UplinkBrosGrenade
+#  name: uplink-bros-grenade-name
+#  description: uplink-bros-grenade-desc
+#  productEntity: BrosGrenade
+#  cost:
+#    Telecrystal: 14
+#  categories:
+#  - UplinkExplosives
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    blacklist:
+#      tags:
+#      - NukeOpsUplink
 
 
 

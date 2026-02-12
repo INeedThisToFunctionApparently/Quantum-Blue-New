@@ -124,12 +124,12 @@ RandomXAEArtifactSpawner20: RandomArtifactSpawner20
 
 # 2025-11-18
 # death of departmental economy
-CrateLockBoxEngineering: CrateEngineeringSecure
-CrateLockBoxMedical: CrateMedicalSecure
-CrateLockBoxScience: CrateScienceSecure
-CrateLockBoxSecurity: CrateSecgear
-CrateLockBoxService: CrateServiceSecure
-ComputerFundingAllocation: ComputerFundingAllocationBroken
+#CrateLockBoxEngineering: CrateEngineeringSecure QB: bandaid fix until we properly revert, I've got these migrations, but reversed, in migrations_qb.yml
+#CrateLockBoxMedical: CrateMedicalSecure
+#CrateLockBoxScience: CrateScienceSecure
+#CrateLockBoxSecurity: CrateSecgear
+#CrateLockBoxService: CrateServiceSecure
+#ComputerFundingAllocation: ComputerFundingAllocationBroken
 
 # 2025-11-20
 # upstream merge replacement prototypes

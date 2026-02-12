@@ -59915,16 +59915,16 @@ entities:
     - type: Transform
       pos: -14.237714,19.738396
       parent: 2
-- proto: PlushieBros
-  entities:
-  - uid: 5049
-    components:
-    - type: MetaData
-      name: BROS
-    - type: Transform
-      pos: -57.049213,82.537796
-      parent: 2
-    - type: RandomWalk
+#- proto: PlushieBros
+#  entities:
+#  - uid: 5049
+#    components:
+#    - type: MetaData
+#      name: BROS
+#    - type: Transform
+#      pos: -57.049213,82.537796
+#      parent: 2
+#    - type: RandomWalk
 - proto: PlushieEeepy
   entities:
   - uid: 12770

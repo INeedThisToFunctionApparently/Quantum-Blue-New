@@ -100,7 +100,7 @@
     - !type:GroupSelector
       weight: 0.1 # rare
       children:
-      - id: PlushieBros
+#      - id: PlushieBros
       - id: PlushieCaptain
       - id: PlushieDwarf
       - id: PlushieEeepy
