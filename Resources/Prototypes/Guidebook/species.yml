@@ -19,7 +19,6 @@
   - Thaven # imp
   - Ungu # imp
   - Vox
-#  - VisitorSpecies # imp # QB: Disabling to maybe fix a duplication
   - Vulpkanin # imp, disabled roundstart
 
 - type: guideEntry
