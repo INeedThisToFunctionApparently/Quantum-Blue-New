@@ -195,10 +195,10 @@
 #    allowedJobs: [ Bartender ]
 #    implicitlyAllowedJobs: [ Captain, HeadOfPersonnel, HospitalityDirector ] #imp edit
 
-- type: entity
-  id: BaseSecurityBartenderZookeeperContraband
-  parent: BaseRestrictedContraband
-  abstract: true
+#- type: entity (moved to _Wizden)
+#  id: BaseSecurityBartenderZookeeperContraband
+#  parent: BaseRestrictedContraband
+#  abstract: true
 #  components:
 #  - type: Contraband
 #    allowedDepartments: [ Security ]
