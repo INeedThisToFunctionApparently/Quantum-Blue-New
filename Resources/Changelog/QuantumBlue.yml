@@ -1,4 +1,11 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: Removed wizard rulebreakbait spells (mass guns and magic items)
+    id: 121
+    time: '2026-05-30T07:25:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/135
   - author: soup4food
     changes:
       - type: Remove
