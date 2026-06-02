@@ -1,4 +1,21 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: 'Elkridge: Chemists will be slightly less annoyed now.'
+      - type: Fix
+        message: 'Dash: All cameras are now properly named.'
+      - type: Tweak
+        message: 'Dash: Drones have earned their freedom.'
+      - type: Tweak
+        message: 'Asterisk: Xenoarcheologists will have a much easier time spacing their workplace now.'
+      - type: Tweak
+        message: 'Asterisk: The library now has everything they normally have.'
+      - type: Tweak
+        message: 'Asterisk: Public botany room was shrunk down in half. Don''t worry, the lizard survived.'
+    id: 123
+    time: '2026-06-02T04:15:07.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/139
   - author: Ecramox
     changes:
       - type: Tweak
