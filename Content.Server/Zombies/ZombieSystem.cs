@@ -254,7 +254,21 @@ namespace Content.Server.Zombies
 
                 if (HasComp<ZombieComponent>(entity))
                 {
-                    args.BonusDamage = -args.BaseDamage;
+                    // Don't infect, don't deal damage, do not heal from bites, don't pass go!
+                    args.Handled = true;
+                    continue;
+                }
+
+                if (_mobState.IsAlive(uid, mobState))
+                {
+                    _damageable.TryChangeDamage(args.User, entity.Comp.HealingOnBite, true, false);
+
+                    // If we cannot infect the living target, the zed will just heal itself.
+                    if (HasComp<ZombieImmuneComponent>(uid) || cannotSpread || !_random.Prob(GetZombieInfectionChance(uid, entity.Comp)))
+                        continue;
+
+                    EnsureComp<PendingZombieComponent>(uid);
+                    EnsureComp<ZombifyOnDeathComponent>(uid);
                 }
                 else
                 {

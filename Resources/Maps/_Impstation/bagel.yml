@@ -133928,6 +133928,15 @@ entities:
     - type: ActiveSignalTimer
     - type: Fixtures
       fixtures: {}
+- proto: SignAnchor
+  entities:
+  - uid: 11010
+    components:
+    - type: Transform
+      pos: -14.5,36.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
 - proto: SignAnomaly
   entities:
   - uid: 19652
