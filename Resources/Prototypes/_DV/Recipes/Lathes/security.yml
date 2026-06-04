@@ -1,4 +1,4 @@
-﻿# armor vests
+# armor vests
 
 - type: latheRecipe
   id: ClothingOuterArmorPlateCarrier
@@ -15,3 +15,10 @@
   materials:
     Steel: 500
     Plastic: 1000
+
+# magboots
+
+- type: latheRecipe
+  parent: ClothingShoesBootsMagSci
+  id: ClothingShoesBootsSecurityMagboots
+  result: ClothingShoesBootsSecurityMagboots
