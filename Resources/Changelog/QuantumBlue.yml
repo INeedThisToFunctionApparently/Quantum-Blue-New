@@ -1,4 +1,11 @@
 Entries:
+  - author: Ecramox
+    changes:
+      - type: Tweak
+        message: Chibi continues to get better in various small ways
+    id: 125
+    time: '2026-06-08T23:25:55.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/140
   - author: rebe83
     changes:
       - type: Tweak
