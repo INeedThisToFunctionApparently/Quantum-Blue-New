@@ -1,4 +1,13 @@
 Entries:
+  - author: RosySaturniidae
+    changes:
+      - type: Add
+        message: 3 new paramedic cosmetics
+      - type: Tweak
+        message: paramedic items should all be the same colors now
+    id: 126
+    time: '2026-06-08T23:37:20.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/141
   - author: Ecramox
     changes:
       - type: Tweak
