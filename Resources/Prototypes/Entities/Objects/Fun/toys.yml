@@ -58,7 +58,7 @@
   name: rubber ducky
   description: Not carried here by ocean currents.
 
-- typeL entity
+- type: entity
   parent: BaseItem
   id: SnapPop
   name: snap pop
