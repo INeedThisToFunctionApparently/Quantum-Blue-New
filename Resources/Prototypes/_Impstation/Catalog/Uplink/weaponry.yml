@@ -197,18 +197,18 @@
   categories:
   - UplinkWeaponry
 
-- type: listing
-  id: uplinkZipperAP
-  name: uplink-zipper-ap-name
-  description: uplink-zipper-ap-desc
-  productEntity: WeaponPistolZipperAP
-  discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 18
-  cost:
-    Telecrystal: 20
-  categories:
-  - UplinkWeaponry
+#- type: listing
+#  id: uplinkZipperAP
+#  name: uplink-zipper-ap-name
+#  description: uplink-zipper-ap-desc
+#  productEntity: WeaponPistolZipperAP
+#  discountCategory: rareDiscounts
+#  discountDownTo:
+#    Telecrystal: 18
+#  cost:
+#    Telecrystal: 20
+#  categories:
+#  - UplinkWeaponry
 
 - type: listing
   id: UplinkOuroBros

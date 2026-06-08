@@ -98,25 +98,25 @@
     whitelist:
     - Chaplain
 
-- type: listing
-  id: UplinkKisserTomatoFakeSeeds
-  name: uplink-kissertomato-fake-name
-  description: uplink-kissertomato-fake-desc
-  icon: { sprite: _Impstation/Objects/Specific/Hydroponics/tomatokisser.rsi, state: seed }
-  productEntity: KisserTomatoFakeSeeds
-  cost:
-    Telecrystal: 8
-  categories:
-  - UplinkJob
-  conditions:
-  - !type:BuyerJobCondition
-    makeHidden: true
-    whitelist:
-    - Botanist
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
+#- type: listing
+#  id: UplinkKisserTomatoFakeSeeds
+#  name: uplink-kissertomato-fake-name
+#  description: uplink-kissertomato-fake-desc
+#  icon: { sprite: _Impstation/Objects/Specific/Hydroponics/tomatokisser.rsi, state: seed }
+#  productEntity: KisserTomatoFakeSeeds
+#  cost:
+#    Telecrystal: 8
+#  categories:
+#  - UplinkJob
+#  conditions:
+#  - !type:BuyerJobCondition
+#    makeHidden: true
+#    whitelist:
+#    - Botanist
+#  - !type:BuyerWhitelistCondition
+#    blacklist:
+#      components:
+#      - SurplusBundle
 
 - type: listing
   id: uplinkCleanerGrenadeBleach
