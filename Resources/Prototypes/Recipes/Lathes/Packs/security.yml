@@ -79,6 +79,7 @@
   - PowerCageSmall
   - TelescopicShield
   - ClothingBackpackHarmpack
+  - ClothingShoesBootsSecurityMagboots # QB - port DeltaV security magboots
 
 - type: latheRecipePack
   id: SecurityBoards
