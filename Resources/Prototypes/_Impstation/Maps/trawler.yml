@@ -16,7 +16,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: '-IMP-KDN'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Impstation/Shuttles/emergency_trawler.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
         - type: StationCargoShuttle
           path: /Maps/_Impstation/Shuttles/cargo_trawler.yml
         - type: StationJobs
