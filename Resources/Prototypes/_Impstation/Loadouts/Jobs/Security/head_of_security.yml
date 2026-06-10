@@ -33,11 +33,6 @@
   equipment:
     head: ClothingHeadHatHOSsoft
 
-- type: loadout
-  id: HeadofSecurityColonelCap
-  equipment:
-    head: ClothingHeadHatHOSColonelCap
-
 # Outer clothing
 - type: loadout
   id: HeadofSecurityGreatcoat
