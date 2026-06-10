@@ -534,7 +534,7 @@
     sprite: _Impstation/Clothing/Head/Hats/buckethat.rsi
   - type: Clothing
     sprite: _Impstation/Clothing/Head/Hats/buckethat.rsi
-    
+
 - type: entity
   parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatHOSColonelCap
