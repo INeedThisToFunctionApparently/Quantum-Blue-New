@@ -356,7 +356,8 @@
     - id: ClothingMaskGasSwat
     - id: ClothingOuterHardsuitSecurityRed
     - id: JetpackSecurityFilled
-    - id: OxygenTankCommandFilled
+    - id: OxygenTankCommandFilled # Imp - command tanks
+    - id: ClothingShoesBootsSecurityMagboots # DeltaV - Added security magboots.
 
 # No hardsuit locker
 - type: entity

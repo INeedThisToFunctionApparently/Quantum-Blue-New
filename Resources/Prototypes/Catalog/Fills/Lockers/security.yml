@@ -72,6 +72,7 @@
     - id: ClothingOuterHardsuitWarden
     - id: OxygenTankFilled
     - id: ClothingMaskGasSecurity # imp edit, replacing basic gasmask
+    - id: ClothingShoesBootsSecurityMagboots # DeltaV - Added security magboots
 
 - type: entity
   id: LockerSecurityFilled
@@ -165,6 +166,7 @@
     - id: TicketPad
     - id: UtilityToken1
     # imp edit end
+    - id: ClothingShoesBootsSecurityMagboots # QB - port DeltaV security magboots
 
 - type: entity
   id: LockerDetectiveFilled
