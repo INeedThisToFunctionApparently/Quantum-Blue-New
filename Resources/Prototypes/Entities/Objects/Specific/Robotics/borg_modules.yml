@@ -859,7 +859,7 @@
     - state: icon-diagnosis
   - type: ItemBorgModule
     hands:
-    - item: HandheldHealthAnalyzer
+    - item: HandheldHealthAnalyzerUnpowered
     - item: ClothingNeckStethoscope
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: diagnosis-module }
@@ -875,7 +875,7 @@
     - state: icon-treatment
   - type: ItemBorgModule
     hands:
-    - item: HandheldHealthAnalyzer
+    - item: HandheldHealthAnalyzerUnpowered
     - item: AdvancedJetInjector
     - item: Gauze
       hand:
@@ -912,7 +912,7 @@
     - state: icon-defib
   - type: ItemBorgModule
     hands:
-    - item: HandheldHealthAnalyzer
+    - item: HandheldHealthAnalyzerUnpowered
     - item: DefibrillatorOneHandedUnpowered
     - item: Crowbar
     - item: BorgFireExtinguisher
@@ -982,7 +982,7 @@
     - state: icon-chem
   - type: ItemBorgModule
     hands:
-    - item: HandheldHealthAnalyzer
+    - item: HandheldHealthAnalyzerUnpowered
     - item: BorgHypo
     - item: Gauze
       hand:
