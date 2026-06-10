@@ -32,7 +32,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Spawners;
-using Content.Shared.Buckle; // imp
 
 namespace Content.Shared.Magic;
 
@@ -68,7 +67,6 @@ public abstract class SharedMagicSystem : EntitySystem
     [Dependency] private readonly TurfSystem _turf = default!;
     [Dependency] private readonly SharedChargesSystem _charges = default!;
     [Dependency] private readonly ExamineSystemShared _examine= default!;
-    [Dependency] private readonly SharedBuckleSystem _buckle = default!; // imp
 
     private static readonly ProtoId<TagPrototype> InvalidForGlobalSpawnSpellTag = "InvalidForGlobalSpawnSpell";
 
@@ -143,7 +141,7 @@ public abstract class SharedMagicSystem : EntitySystem
 
         foreach (var position in GetInstantSpawnPositions(transform, args.PosData))
         {
-            SpawnSpellHelper(args.Prototype, position, args.Performer, preventCollide: args.PreventCollideWithCaster, tryBuckle: args.TryBuckle); // imp edit, add TryBuckle
+            SpawnSpellHelper(args.Prototype, position, args.Performer, preventCollide: args.PreventCollideWithCaster);
         }
 
         args.Handled = true;
@@ -335,7 +333,7 @@ public abstract class SharedMagicSystem : EntitySystem
     // End Teleport Spells
     #endregion
     #region Spell Helpers
-    private void SpawnSpellHelper(string? proto, EntityCoordinates position, EntityUid performer, float? lifetime = null, bool preventCollide = false, bool tryBuckle = false) // imp edit, add TryBuckle
+    private void SpawnSpellHelper(string? proto, EntityCoordinates position, EntityUid performer, float? lifetime = null, bool preventCollide = false)
     {
         if (!_net.IsServer)
             return;
@@ -353,13 +351,6 @@ public abstract class SharedMagicSystem : EntitySystem
             var comp = EnsureComp<PreventCollideComponent>(ent);
             comp.Uid = performer;
         }
-
-        // imp edit start
-        if (tryBuckle)
-        {
-            _buckle.TryBuckle(performer, performer, ent);
-        }
-        // imp edit end
     }
 
     private void AddComponents(EntityUid target, ComponentRegistry comps)

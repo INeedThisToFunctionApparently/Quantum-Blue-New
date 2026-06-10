@@ -37,7 +37,6 @@ using Content.Shared._Starlight.CollectiveMind; // Starlight - Collective Minds
 using Content.Server.Popups; // Startlight - Collective Minds
 using Content.Server._Wizden.Chat.Systems; // Imp edit for Last Message Before Death Webhook
 using Content.Shared.Abilities.Mime; // imp
-using Content.Shared.Mind; // imp
 
 namespace Content.Server.Chat.Systems;
 
@@ -66,7 +65,6 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly LastMessageBeforeDeathSystem _lastMessageBeforeDeathSystem = default!; // Imp Edit LastMessageBeforeDeath Webhook
     [Dependency] private readonly CollectiveMindUpdateSystem _collectiveMind = default!; // Starlight - Collective Minds
     [Dependency] private readonly PopupSystem _popupSystem = default!; // Starlight - Collective Minds
-    [Dependency] private readonly SharedMindSystem _mind = default!; // imp
 
     private bool _loocEnabled = true;
     private bool _deadLoocEnabled;
@@ -407,9 +405,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (_mobStateSystem.IsDead(source) || collectiveMind == null || message == "" || !TryComp<CollectiveMindComponent>(source, out var sourceCollectiveMindComp) || !sourceCollectiveMindComp.Minds.ContainsKey(collectiveMind))
             return;
 
-        var mind = _mind.GetMind(source); // imp
-
-        if (TryComp<MimePowersComponent>(mind, out var comp) && comp.Enabled) // Imp add: no cheating
+        if (TryComp<MimePowersComponent>(source, out var comp) && comp.Enabled) // Imp add: no cheating
         {
             _popupSystem.PopupEntity(Loc.GetString("mime-cant-speak"), source, source);
             return;

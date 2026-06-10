@@ -38,10 +38,4 @@ public sealed partial class RetractableItemActionComponent : Component
     /// The container ID used to store the item.
     /// </summary>
     public const string ContainerId = "item-action-item-container";
-
-    /// <summary>
-    /// Imp addition. Whether to retract the item when crit.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public bool RetractOnCrit;
 }

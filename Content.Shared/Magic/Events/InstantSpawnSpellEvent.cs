@@ -19,10 +19,4 @@ public sealed partial class InstantSpawnSpellEvent : InstantActionEvent
     /// </summary>
     [DataField]
     public MagicInstantSpawnData PosData = new TargetCasterPos();
-
-    /// <summary>
-    /// Imp addition. Will attempt to buckle the performer to the entity.
-    /// </summary>
-    [DataField]
-    public bool TryBuckle;
 }

@@ -61,7 +61,7 @@
   id: CartridgeBazooka
 
 - type: Tag
-  id: CartridgeMime
+  id: CartridgeLPistol
 
 - type: Tag
   id: CartridgeMinigun

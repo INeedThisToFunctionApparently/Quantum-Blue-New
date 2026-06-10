@@ -11,9 +11,6 @@ using Content.Shared.Speech.Muting;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Timing;
-using Content.Shared.Ghost; // imp
-using Content.Shared.Mind; // imp
-using Content.Shared.Mind.Components; // imp
 
 namespace Content.Shared.Abilities.Mime;
 
@@ -26,7 +23,6 @@ public sealed class MimePowersSystem : EntitySystem
     [Dependency] private readonly IMapManager _mapMan = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly SharedMindSystem _mind = default!; // imp
 
     public override void Initialize()
     {
@@ -34,13 +30,10 @@ public sealed class MimePowersSystem : EntitySystem
 
         SubscribeLocalEvent<MimePowersComponent, ComponentInit>(OnComponentInit);
         SubscribeLocalEvent<MimePowersComponent, ComponentShutdown>(OnComponentShutdown);
-        //SubscribeLocalEvent<MimePowersComponent, InvisibleWallActionEvent>(OnInvisibleWall); // imp edit
+        SubscribeLocalEvent<MimePowersComponent, InvisibleWallActionEvent>(OnInvisibleWall);
 
-        SubscribeLocalEvent< /*MimePowersComponent, */BreakVowAlertEvent>(OnBreakVowAlert); // imp edit
-        SubscribeLocalEvent</*MimePowersComponent, */RetakeVowAlertEvent>(OnRetakeVowAlert); // imp edit
-
-        SubscribeLocalEvent<MimePowersComponent, MindGotAddedEvent>(OnMindGotAdded); // imp edit
-        SubscribeLocalEvent<MimePowersComponent, MindGotRemovedEvent>(OnMindGotRemoved); // imp edit
+        SubscribeLocalEvent<MimePowersComponent, BreakVowAlertEvent>(OnBreakVowAlert);
+        SubscribeLocalEvent<MimePowersComponent, RetakeVowAlertEvent>(OnRetakeVowAlert);
     }
 
     public override void Update(float frameTime)
@@ -51,11 +44,6 @@ public sealed class MimePowersSystem : EntitySystem
         var query = EntityQueryEnumerator<MimePowersComponent>();
         while (query.MoveNext(out var uid, out var mime))
         {
-            // imp edit start
-            if (!TryComp<MindComponent>(uid, out var mind))
-                continue;
-            // imp edit end
-
             if (!mime.VowBroken || mime.ReadyToRepent)
                 continue;
 
@@ -64,60 +52,31 @@ public sealed class MimePowersSystem : EntitySystem
 
             mime.ReadyToRepent = true;
             Dirty(uid, mime);
-
-            // imp edit start
-            // _popupSystem.PopupClient(Loc.GetString("mime-ready-to-repent"), uid, uid);
-            if (mind.CurrentEntity != null)
-                _popupSystem.PopupClient(Loc.GetString("mime-ready-to-repent"), mind.CurrentEntity.Value, mind.CurrentEntity.Value);
-            // imp edit end
+            _popupSystem.PopupClient(Loc.GetString("mime-ready-to-repent"), uid, uid);
         }
     }
 
     private void OnComponentInit(Entity<MimePowersComponent> ent, ref ComponentInit args)
     {
-        // imp edit start
-        if (!TryComp<MindComponent>(ent, out var mind))
-            return;
-
-        if (mind.CurrentEntity == null)
-            return;
-
-        var mutedComponent = EnsureComp<MutedComponent>(mind.CurrentEntity.Value);
-        mutedComponent.MutedScream = false;
-        // imp edit end
+        var mutedComponent = EnsureComp<MutedComponent>(ent); // IMP
+        mutedComponent.MutedScream = false; // IMP
 
         if (ent.Comp.PreventWriting)
         {
-            EnsureComp<BlockWritingComponent>(mind.CurrentEntity.Value, out var illiterateComponent); // imp edit, ent -> mind.CurrentEntity.Value
+            EnsureComp<BlockWritingComponent>(ent, out var illiterateComponent);
             illiterateComponent.FailWriteMessage = ent.Comp.FailWriteMessage;
-            Dirty(mind.CurrentEntity.Value, illiterateComponent); // imp edit, ent -> mind.CurrentEntity.Value
+            Dirty(ent, illiterateComponent);
         }
 
-        _alertsSystem.ShowAlert(mind.CurrentEntity.Value, ent.Comp.VowAlert); // imp edit, ent.Owner -> mind.CurrentEntity.Value
-        //_actionsSystem.AddAction(ent, ref ent.Comp.InvisibleWallActionEntity, ent.Comp.InvisibleWallAction); // imp edit
+        _alertsSystem.ShowAlert(ent.Owner, ent.Comp.VowAlert);
+        _actionsSystem.AddAction(ent, ref ent.Comp.InvisibleWallActionEntity, ent.Comp.InvisibleWallAction);
     }
 
     private void OnComponentShutdown(Entity<MimePowersComponent> ent, ref ComponentShutdown args)
     {
-        //_actionsSystem.RemoveAction(ent.Owner, ent.Comp.InvisibleWallActionEntity); // imp edit
-
-        // imp edit start
-        if (!TryComp<MindComponent>(ent, out var mind))
-            return;
-
-        if (mind.CurrentEntity == null)
-            return;
-
-        RemComp<MutedComponent>(mind.CurrentEntity.Value);
-        if (ent.Comp.PreventWriting)
-            RemComp<BlockWritingComponent>(mind.CurrentEntity.Value);
-
-        _alertsSystem.ClearAlert(mind.CurrentEntity.Value, ent.Comp.VowAlert);
-        _alertsSystem.ClearAlert(mind.CurrentEntity.Value, ent.Comp.VowBrokenAlert);
-        // imp edit end
+        _actionsSystem.RemoveAction(ent.Owner, ent.Comp.InvisibleWallActionEntity);
     }
 
-    /* imp edit
     /// <summary>
     /// Creates an invisible wall in a free space after some checks.
     /// </summary>
@@ -153,25 +112,22 @@ public sealed class MimePowersSystem : EntitySystem
         // Handle args so cooldown works
         args.Handled = true;
     }
-    */
 
-    private void OnBreakVowAlert(/*Entity<MimePowersComponent> ent, ref */BreakVowAlertEvent args) // imp edit
+    private void OnBreakVowAlert(Entity<MimePowersComponent> ent, ref BreakVowAlertEvent args)
     {
         if (args.Handled)
             return;
 
-        //BreakVow(ent, ent); // imp edit
-        BreakVow(args.User); // imp edit
+        BreakVow(ent, ent);
         args.Handled = true;
     }
 
-    private void OnRetakeVowAlert(/*Entity<MimePowersComponent> ent, ref */RetakeVowAlertEvent args) // imp edit
+    private void OnRetakeVowAlert(Entity<MimePowersComponent> ent, ref RetakeVowAlertEvent args)
     {
         if (args.Handled)
             return;
 
-        //RetakeVow(ent, ent); // imp edit
-        RetakeVow(args.User); // imp edit
+        RetakeVow(ent, ent);
         args.Handled = true;
     }
 
@@ -180,14 +136,7 @@ public sealed class MimePowersSystem : EntitySystem
     /// </summary>
     public void BreakVow(EntityUid uid, MimePowersComponent? mimePowers = null)
     {
-        // imp edit start
-        var mind = _mind.GetMind(uid);
-
-        if (mind == null)
-            return;
-        // imp edit end
-
-        if (!Resolve(mind.Value, ref mimePowers)) // imp edit, uid -> mind.Value
+        if (!Resolve(uid, ref mimePowers))
             return;
 
         if (mimePowers.VowBroken)
@@ -196,14 +145,14 @@ public sealed class MimePowersSystem : EntitySystem
         mimePowers.Enabled = false;
         mimePowers.VowBroken = true;
         mimePowers.VowRepentTime = _timing.CurTime + mimePowers.VowCooldown;
-        Dirty(mind.Value, mimePowers); // imp edit, uid -> mind.Value
+        Dirty(uid, mimePowers);
         RemComp<MutedComponent>(uid);
         if (mimePowers.PreventWriting)
             RemComp<BlockWritingComponent>(uid);
 
         _alertsSystem.ClearAlert(uid, mimePowers.VowAlert);
         _alertsSystem.ShowAlert(uid, mimePowers.VowBrokenAlert);
-        //_actionsSystem.RemoveAction(uid, mimePowers.InvisibleWallActionEntity); // imp edit
+        _actionsSystem.RemoveAction(uid, mimePowers.InvisibleWallActionEntity);
     }
 
     /// <summary>
@@ -211,14 +160,7 @@ public sealed class MimePowersSystem : EntitySystem
     /// </summary>
     public void RetakeVow(EntityUid uid, MimePowersComponent? mimePowers = null)
     {
-        // imp edit start
-        var mind = _mind.GetMind(uid);
-
-        if (mind == null)
-            return;
-        // imp edit end
-
-        if (!Resolve(mind.Value, ref mimePowers)) // imp edit, uid -> mind.Value
+        if (!Resolve(uid, ref mimePowers))
             return;
 
         if (!mimePowers.ReadyToRepent)
@@ -230,12 +172,8 @@ public sealed class MimePowersSystem : EntitySystem
         mimePowers.Enabled = true;
         mimePowers.ReadyToRepent = false;
         mimePowers.VowBroken = false;
-        Dirty(mind.Value, mimePowers); // imp edit, uid -> mind.Value
-        //AddComp<MutedCaomponent>(uid); // imp edit
-        // imp edit start
-        var mutedComponent = EnsureComp<MutedComponent>(uid);
-        mutedComponent.MutedScream = false;
-        // imp edit end
+        Dirty(uid, mimePowers);
+        AddComp<MutedComponent>(uid);
         if (mimePowers.PreventWriting)
         {
             EnsureComp<BlockWritingComponent>(uid, out var illiterateComponent);
@@ -245,50 +183,6 @@ public sealed class MimePowersSystem : EntitySystem
 
         _alertsSystem.ClearAlert(uid, mimePowers.VowBrokenAlert);
         _alertsSystem.ShowAlert(uid, mimePowers.VowAlert);
-        //_actionsSystem.AddAction(uid, ref mimePowers.InvisibleWallActionEntity, mimePowers.InvisibleWallAction, uid); // imp edit
+        _actionsSystem.AddAction(uid, ref mimePowers.InvisibleWallActionEntity, mimePowers.InvisibleWallAction, uid);
     }
-
-    // imp edit start
-
-    /// <summary>
-    /// Add the various components to an entity if a mind is added to them with the mime vow component.
-    /// </summary>
-    private void OnMindGotAdded(Entity<MimePowersComponent> ent, ref MindGotAddedEvent args)
-    {
-        if (HasComp<GhostComponent>(args.Container))
-            return;
-
-        if (ent.Comp.Enabled)
-        {
-            var mutedComponent = EnsureComp<MutedComponent>(args.Container.Owner);
-            mutedComponent.MutedScream = false;
-
-            if (ent.Comp.PreventWriting)
-            {
-                EnsureComp<BlockWritingComponent>(args.Container.Owner, out var illiterateComponent);
-                illiterateComponent.FailWriteMessage = ent.Comp.FailWriteMessage;
-                Dirty(args.Container.Owner, illiterateComponent);
-            }
-
-            _alertsSystem.ShowAlert(args.Container.Owner, ent.Comp.VowAlert);
-        }
-        else
-        {
-            _alertsSystem.ShowAlert(args.Container.Owner, ent.Comp.VowBrokenAlert);
-        }
-    }
-
-    /// <summary>
-    /// Remove the various components from an entity if a mind is removed from them with the mime vow component.
-    /// </summary>
-    private void OnMindGotRemoved(Entity<MimePowersComponent> ent, ref MindGotRemovedEvent args)
-    {
-        RemComp<MutedComponent>(args.Container.Owner);
-        if (ent.Comp.PreventWriting)
-            RemComp<BlockWritingComponent>(args.Container.Owner);
-
-        _alertsSystem.ClearAlert(args.Container.Owner, ent.Comp.VowAlert);
-        _alertsSystem.ClearAlert(args.Container.Owner, ent.Comp.VowBrokenAlert);
-    }
-    // imp edit end
 }
