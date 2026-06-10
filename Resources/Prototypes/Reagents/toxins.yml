@@ -309,12 +309,6 @@
         damage:
           types:
             Radiation: 3
-        # imp edit start
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Gray ] # gray radiation immunity
-          inverted: true
-        # imp edit end
 
 - type: reagent
   id: HeartbreakerToxin

@@ -341,12 +341,6 @@
         damage:
           types:
             Radiation: 2
-        # imp edit start
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Gray ] # gray radiation immunity
-          inverted: true
-        # imp edit end
 
 - type: reagent
   id: Zinc
