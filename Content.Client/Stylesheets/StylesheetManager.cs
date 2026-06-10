@@ -5,7 +5,6 @@ using Content.Client.Stylesheets.Stylesheets;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Shared.Reflection;
-using Content.Client._Impstation.Stylesheets; // imp
 
 namespace Content.Client.Stylesheets
 {
@@ -21,8 +20,6 @@ namespace Content.Client.Stylesheets
 
         public Stylesheet SheetNanotrasen { get; private set; } = default!;
         public Stylesheet SheetSystem { get; private set; } = default!;
-
-        public Stylesheet SheetSyndicate { get; private set; } = default!; // imp
 
         [Obsolete("Update to use SheetNanotrasen instead")]
         public Stylesheet SheetNano { get; private set; } = default!;
@@ -52,7 +49,6 @@ namespace Content.Client.Stylesheets
             Stylesheets = new Dictionary<string, Stylesheet>();
             SheetNanotrasen = Init(new NanotrasenStylesheet(new BaseStylesheet.NoConfig(), this));
             SheetSystem = Init(new SystemStylesheet(new BaseStylesheet.NoConfig(), this));
-            SheetSyndicate = Init(new SyndicateStylesheet(new BaseStylesheet.NoConfig(), this)); // imp
             SheetNano = new StyleNano(_resCache).Stylesheet; // TODO: REMOVE (obsolete)
             SheetSpace = new StyleSpace(_resCache).Stylesheet; // TODO: REMOVE (obsolete)
 
