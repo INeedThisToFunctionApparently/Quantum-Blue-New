@@ -187,6 +187,3 @@ ghost-role-information-rock-desc = A powerfull stone monster, you must protect y
 
 ghost-role-information-magic-monkey-name = Magic monkey
 ghost-role-information-magic-monkey-desc = A wizards Apprentice.
-
-ghost-role-information-carp-radio-name = Big mouth carp
-ghost-role-information-carp-radio-desc = A stuffed carp containing a transmitter that picks up distant space radio shows.

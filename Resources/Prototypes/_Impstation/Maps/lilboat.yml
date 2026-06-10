@@ -3,7 +3,7 @@
   mapName: 'NTAS Dolphin'
   mapPath: /Maps/_Impstation/lilboat.yml
   minPlayers: 8
-  maxPlayers: 20
+  maxPlayers: 34
   stations:
     Lilboat:
       stationProto: StandardNanotrasenStation
