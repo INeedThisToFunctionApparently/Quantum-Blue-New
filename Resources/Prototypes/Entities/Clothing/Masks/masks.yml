@@ -292,12 +292,12 @@
     slots:
     - Snout
 
-- type: entity
-  parent: ClothingMaskClownChameleonSecurity #imp edit
-  id: ClothingMaskClownSecurity
-  name: security clown wig and mask
+#- type: entity
+#  parent: ClothingMaskClownChameleonSecurity #imp edit
+#  id: ClothingMaskClownSecurity
+#  name: security clown wig and mask
   #description: A debatably oxymoronic but protective mask and wig. #imp edit, use parent description
-  components:
+#  components:
   # imp edit, components moved to ClothingMaskClownChameleonSecurity
   #- type: Sprite
   #  sprite: Clothing/Mask/clown_security.rsi
@@ -318,8 +318,8 @@
   #- type: HideLayerClothing
   #  slots:
   #  - Snout
-  - type: ChameleonClothing #imp edit
-    default: ClothingMaskClownSecurity
+#  - type: ChameleonClothing #imp edit
+#    default: ClothingMaskClownSecurity
 
 - type: entity
   parent: ClothingMaskBase
