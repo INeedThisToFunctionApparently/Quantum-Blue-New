@@ -5,7 +5,7 @@
   description: Short-lived, but no less dangerous.
   components:
   - type: Tag
-    tags:
+    tags: 
     - XenoHornet
   - type: Sprite
     drawdepth: Mobs
