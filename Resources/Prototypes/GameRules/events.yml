@@ -26,7 +26,6 @@
     #- id: SpiderClownSpawn
     #- id: SpiderSpawn
     - id: VentClog
-    - id: ButlerSpawn # imp
     - id: GoblinKnightEvent # imp
     - id: HereticBooksSpawnSmall #imp
     #- id: BiomagneticPolarizationRule # imp, QB disabled

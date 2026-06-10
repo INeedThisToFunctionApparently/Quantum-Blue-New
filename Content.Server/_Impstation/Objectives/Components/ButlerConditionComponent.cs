@@ -1,5 +1,4 @@
 using Content.Server.Objectives.Systems;
-using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._Impstation.Objectives.Components;
@@ -15,10 +14,6 @@ public sealed partial class ButlerConditionComponent : Component
     /// </summary>
     [DataField]
     public EntProtoId Package = "BoxButler";
-
     [DataField]
     public LocId ButlerSpawn = "butler-spawn";
-
-    [DataField]
-    public SoundSpecifier TargetAudio = new SoundPathSpecifier("/Audio/_Impstation/Effects/doorbell.ogg");
 }
