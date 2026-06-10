@@ -7,7 +7,6 @@ immovable-rod-penetrated-mob-throngler = {CAPITALIZE(THE($mob))} did not win the
 immovable-rod-penetrated-mob-gibstick = {CAPITALIZE(THE($rod))} did about what you would expect to {CAPITALIZE(THE($mob))}.
 immovable-rod-penetrated-mob-weh = WEH!
 immovable-rod-penetrated-mob-gondal = {CAPITALIZE(THE($mob))}'s eardrums exploded. Badly.
-immovable-rod-penetrated-mob-gondalwide = {CAPITALIZE(THE($mob))} could not handle the Gondal's girth.
 immovable-rod-penetrated-mob-hollowbarrel = {CAPITALIZE(THE($mob))} died with no honor!
 immovable-rod-penetrated-mob-baguette = {CAPITALIZE(THE($mob))} a été réduit en purée.
 immovable-rod-penetrated-mob-whiteboy = {CAPITALIZE(THE($mob))} got creamed!
