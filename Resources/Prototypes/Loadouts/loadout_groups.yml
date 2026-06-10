@@ -1304,7 +1304,6 @@
   - WardenCoat
   - WardenArmoredWinterCoat
   - WardenWinterCoatUnarmored # imp
-  - WardenBomberJacket # imp
 
 - type: loadoutGroup
   id: SecurityHead
