@@ -4,7 +4,7 @@ meta:
   engineVersion: 266.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/31/2025 04:38:48
+  time: 01/28/2026 19:23:39
   entityCount: 28776
 maps:
 - 780
@@ -12765,7 +12765,7 @@ entities:
       pos: 24.5,16.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -164019.98
+      secondsUntilStateChange: -164500.3
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -87298,7 +87298,7 @@ entities:
       pos: -34.5,-14.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -158208.55
+      secondsUntilStateChange: -158688.86
       state: Closing
   - uid: 15010
     components:
@@ -128650,7 +128650,7 @@ entities:
       pos: 28.5,-34.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -137978.88
+      secondsUntilStateChange: -138459.19
       state: Closing
 - proto: hydroponicsSoil
   entities:
