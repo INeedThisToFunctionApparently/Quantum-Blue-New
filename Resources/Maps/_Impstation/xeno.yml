@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 266.0.0
+  engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/19/2025 01:03:34
-  entityCount: 19945
+  time: 01/13/2026 00:03:32
+  entityCount: 19968
 maps:
 - 1
 grids:
@@ -10379,7 +10379,7 @@ entities:
       pos: 11.5,-30.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -149929.2
+      secondsUntilStateChange: -152860.16
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10990,7 +10990,7 @@ entities:
       pos: -34.5,-17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -19215.527
+      secondsUntilStateChange: -22146.477
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12503,6 +12503,13 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -33.5,-17.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 19750
+    components:
+    - type: Transform
+      pos: 55.5,-69.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -27649,6 +27656,61 @@ entities:
     - type: Transform
       pos: 53.5,-69.5
       parent: 2
+  - uid: 19916
+    components:
+    - type: Transform
+      pos: 41.5,-81.5
+      parent: 2
+  - uid: 19935
+    components:
+    - type: Transform
+      pos: 41.5,-82.5
+      parent: 2
+  - uid: 19946
+    components:
+    - type: Transform
+      pos: 41.5,-83.5
+      parent: 2
+  - uid: 19947
+    components:
+    - type: Transform
+      pos: 42.5,-83.5
+      parent: 2
+  - uid: 19948
+    components:
+    - type: Transform
+      pos: 43.5,-83.5
+      parent: 2
+  - uid: 19949
+    components:
+    - type: Transform
+      pos: 44.5,-83.5
+      parent: 2
+  - uid: 19950
+    components:
+    - type: Transform
+      pos: 45.5,-83.5
+      parent: 2
+  - uid: 19951
+    components:
+    - type: Transform
+      pos: 46.5,-83.5
+      parent: 2
+  - uid: 19952
+    components:
+    - type: Transform
+      pos: 47.5,-83.5
+      parent: 2
+  - uid: 19953
+    components:
+    - type: Transform
+      pos: 48.5,-83.5
+      parent: 2
+  - uid: 19954
+    components:
+    - type: Transform
+      pos: 49.5,-83.5
+      parent: 2
 - proto: CableApcStack
   entities:
   - uid: 9765
@@ -38305,7 +38367,12 @@ entities:
   - uid: 19741
     components:
     - type: Transform
-      pos: 51.5,-70.5
+      pos: 54.5,-69.5
+      parent: 2
+  - uid: 19815
+    components:
+    - type: Transform
+      pos: 55.5,-69.5
       parent: 2
 - proto: CableTerminal
   entities:
@@ -79617,6 +79684,13 @@ entities:
     components:
     - type: Transform
       pos: -38.5,-52.5
+      parent: 2
+- proto: GlassBoxNukeDiskFilled
+  entities:
+  - uid: 726
+    components:
+    - type: Transform
+      pos: -47.5,-45.5
       parent: 2
 - proto: GlowstickBase
   entities:
