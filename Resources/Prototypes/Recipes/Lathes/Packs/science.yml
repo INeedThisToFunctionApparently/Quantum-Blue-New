@@ -49,6 +49,7 @@
   recipes:
   - WeaponPistolCHIMP
   - WeaponForceGun
+  - WeaponLaserSvalinn # imp, T2
   - WeaponProtoKineticAccelerator
   - PKAUpgradeDamage
   - PKAUpgradeRange
