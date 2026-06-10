@@ -110,9 +110,6 @@
   - type: AcousticData # VDS
     absorption: 15
     reflectRay: true
-  - type: ParcelWrapOverride # imp
-    parcelPrototype: WrappedParcelLocker
-    wrapDelay: 2.0
 
 # steel closet base (that can be constructed/deconstructed)
 - type: entity

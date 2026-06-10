@@ -110,7 +110,7 @@
           "Medium": { state: "parcel-medium" }
           "Large": { state: "parcel-medium" }
           "Huge": { state: "parcel-large" }
-          "Ginormous": { state: "parcel-huge" } # imp edit, parcel-large -> parcel-huge
+          "Ginormous": { state: "parcel-large" }
       enum.PaperLabelVisuals.HasLabel:
         enum.PaperLabelVisuals.Layer:
           True: { visible: true }
@@ -122,13 +122,13 @@
           CaptainsPaper: { state: captains_paper }
           Invoice: { state: invoice }
   - type: Sprite
-    sprite: _Impstation/Objects/Misc/ParcelWrap/wrapped_parcel.rsi # imp edit
+    sprite: Objects/Misc/ParcelWrap/wrapped_parcel.rsi
     layers:
     - state: parcel-medium
       map: [ "enum.WrappedParcelVisuals.Layer" ]
     - state: paper
       visible: false
-      sprite: _Impstation/Objects/Misc/ParcelWrap/paper_labels.rsi # imp edit
+      sprite: Objects/Misc/ParcelWrap/paper_labels.rsi
       map: ["enum.PaperLabelVisuals.Layer"]
 
 - type: entity
