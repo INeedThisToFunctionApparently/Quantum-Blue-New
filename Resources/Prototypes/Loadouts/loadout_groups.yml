@@ -1238,7 +1238,6 @@
   - HeadofSecurityHeadDV # DeltaV
   - HeadofSecurityPatrolCap # imp
   - HeadofSecurityColonelCap # imp
-  - HeadofSecurityHelmet #imp
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
