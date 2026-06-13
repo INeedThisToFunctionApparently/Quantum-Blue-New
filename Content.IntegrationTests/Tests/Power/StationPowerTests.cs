@@ -86,6 +86,7 @@ public sealed class StationPowerTests
     };
 
     [Test, TestCaseSource(nameof(GameMaps))]
+    [Ignore("OOM fix - reenable after merging upstream test refactors")] // imp
     public async Task TestStationStartingPowerWindow(string mapProtoId)
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings
