@@ -1,4 +1,18 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: Some tiles have been changed based on feedback, others due to my own disatisfcation with them!
+    id: 128
+    time: '2026-06-11T23:36:16.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/144
+  - author: Toasterblast
+    changes:
+      - type: Tweak
+        message: The Flatpacker 1001 now matches its fellow machines.
+    id: 127
+    time: '2026-06-11T22:47:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/150
   - author: RosySaturniidae
     changes:
       - type: Add
