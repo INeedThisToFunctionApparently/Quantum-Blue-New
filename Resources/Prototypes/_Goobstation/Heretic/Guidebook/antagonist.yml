@@ -17,7 +17,7 @@
     - HereticsAsh
     - HereticsFlesh
     - HereticsVoid
-    - HereticsHunt
+#    - HereticsHunt
 
 - type: guideEntry
   id: HereticsKnowledge

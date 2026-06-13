@@ -10,18 +10,18 @@
   categories:
   - UplinkExplosives
 
-- type: listing
-  id: UplinkBrosGrenade
-  name: uplink-bros-grenade-name
-  description: uplink-bros-grenade-desc
-  productEntity: BrosGrenade
-  cost:
-    Telecrystal: 14
-  categories:
-  - UplinkExplosives
-  conditions:
-  - !type:StoreWhitelistCondition
-    makeHidden: true
-    blacklist:
-      tags:
-      - NukeOpsUplink
+#- type: listing
+#  id: UplinkBrosGrenade
+#  name: uplink-bros-grenade-name
+#  description: uplink-bros-grenade-desc
+#  productEntity: BrosGrenade
+#  cost:
+#    Telecrystal: 14
+#  categories:
+#  - UplinkExplosives
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    makeHidden: true
+#    blacklist:
+#      tags:
+#      - NukeOpsUplink

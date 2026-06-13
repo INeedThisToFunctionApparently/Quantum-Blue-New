@@ -160,11 +160,10 @@
   - Decacoresimov2
   - Decacoresimov3
   obeysTo: laws-owner-crew
-  
+
 #friendimov
 
 # wizard laws
-  lawString: law-antmov-4
 - type: siliconLaw
   id: Wizmov1
   order: 1

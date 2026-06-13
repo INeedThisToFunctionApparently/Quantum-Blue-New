@@ -176,7 +176,7 @@
   - type: ActionGrant
     actions:
     - ActionViewLaws
-    - ActionOpenCartridges
+#    - ActionOpenCartridges
   - type: SiliconLawProvider
     laws: Decacoresimov # custom laws here
   - type: Stripping

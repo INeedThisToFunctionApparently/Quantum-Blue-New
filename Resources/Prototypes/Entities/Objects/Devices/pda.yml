@@ -1605,8 +1605,8 @@
 - type: entity
   parent: [ BaseHighlyIllegalContraband, BasePDA ]
   id: NinjaPDA
-  name: ninja PDA
-  description: You stealthy bastard, you!
+  name: clear PDA #QB: Making this into a clear PDA
+  description: 99 and 44/100ths percent pure plastic. #QB: Making this into a clear PDA
   components:
   - type: Pda
     id: NinjaIDCard
@@ -1614,9 +1614,9 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
         !type:String
-        pda-ninja
+        pda-clear
   - type: Icon
-    state: pda-ninja
+    state: pda-clear
 
 - type: entity
   parent: [ BaseMajorContraband, SyndiPDA ]

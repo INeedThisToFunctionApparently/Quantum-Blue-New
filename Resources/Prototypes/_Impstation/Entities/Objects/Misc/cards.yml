@@ -1150,14 +1150,14 @@
           weight: 0.51
         - id: ClownSpiderTippyTrumpcardSyndicate
           weight: 0.51
-        - id: SEOFTippyTrumpcardSyndicate
-          weight: 0.51
-        - id: FOESTippyTrumpcardSyndicate
-          weight: 0.51
-        - id: SORBTippyTrumpcardSyndicate
-          weight: 0.82
-        - id: BROSTippyTrumpcardSyndicate
-          weight: 0.82
+#        - id: SEOFTippyTrumpcardSyndicate
+#          weight: 0.51
+#        - id: FOESTippyTrumpcardSyndicate
+#          weight: 0.51
+#        - id: SORBTippyTrumpcardSyndicate
+#          weight: 0.82
+#        - id: BROSTippyTrumpcardSyndicate
+#          weight: 0.82
         - id: BombadilidiidaeTippyTrumpcardSyndicate
           weight: 0.51
         - id: SpaceKangarooTippyTrumpcardSyndicate
@@ -1321,14 +1321,14 @@
           weight: 0.15
         - id: ClownSpiderTippyTrumpcard
           weight: 0.03
-        - id: SEOFTippyTrumpcard
-          weight: 0.51
-        - id: FOESTippyTrumpcard
-          weight: 0.51
-        - id: SORBTippyTrumpcard
-          weight: 0.82
-        - id: BROSTippyTrumpcard
-          weight: 0.82
+#        - id: SEOFTippyTrumpcard
+#          weight: 0.51
+#        - id: FOESTippyTrumpcard
+#          weight: 0.51
+#        - id: SORBTippyTrumpcard
+#          weight: 0.82
+#        - id: BROSTippyTrumpcard
+#          weight: 0.82
         - id: WillowTippyTrumpcard
           weight: 0.15
         - id: BombadilidiidaeTippyTrumpcard
@@ -1884,81 +1884,81 @@
     sprite: _EstacaoPirata/Objects/Misc/cards.rsi
     state: tt_roo
 
-- type: entity
-  parent: CardBaseTippyTrump
-  id: BROSTippyTrumpcard
-  suffix: BROS
-  components:
-  - type: Card
-    name: BROS card. Robustness - 1, Validity - 3, Whimsy 5
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: tt_bros
-
-- type: entity
-  parent: [ BROSTippyTrumpcard, CardBaseTippyTrumpSyndicate ]
-  id: BROSTippyTrumpcardSyndicate
-  suffix: BROS, Syndicate
-  components:
-  - type: SpawnOnTrigger
-    proto: MobBros
-
-- type: entity
-  parent: CardBaseTippyTrump
-  id: SORBTippyTrumpcard
-  suffix: SORB
-  components:
-  - type: Card
-    name: SORB card. Robustness - 5, Validity - 3, Whimsy 1
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: tt_sorb
-
-- type: entity
-  parent: [ SORBTippyTrumpcard, CardBaseTippyTrumpSyndicate ]
-  id: SORBTippyTrumpcardSyndicate
-  suffix: SORB, Syndicate
-  components:
-  - type: SpawnOnTrigger
-    proto: MobSorb
-
-- type: entity
-  parent: CardBaseTippyTrump
-  id: FOESTippyTrumpcard
-  suffix: FOES
-  components:
-  - type: Card
-    name: FOES card. Robustness - 2, Validity - 4, Whimsy 6
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: tt_foes
-
-- type: entity
-  parent: [ FOESTippyTrumpcard, CardBaseTippyTrumpSyndicate ]
-  id: FOESTippyTrumpcardSyndicate
-  suffix: FOES, Syndicate
-  components:
-  - type: SpawnOnTrigger
-    proto: MobFoes
-
-- type: entity
-  parent: CardBaseTippyTrump
-  id: SEOFTippyTrumpcard
-  suffix: SEOF
-  components:
-  - type: Card
-    name: SEOF card. Robustness - 6, Validity - 4, Whimsy 2
-  - type: Sprite
-    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
-    state: tt_seof
-
-- type: entity
-  parent: [ SEOFTippyTrumpcard, CardBaseTippyTrumpSyndicate ]
-  id: SEOFTippyTrumpcardSyndicate
-  suffix: SEOF, Syndicate
-  components:
-  - type: SpawnOnTrigger
-    proto: MobSeof
+#- type: entity
+#  parent: CardBaseTippyTrump
+#  id: BROSTippyTrumpcard
+#  suffix: BROS
+#  components:
+#  - type: Card
+#    name: BROS card. Robustness - 1, Validity - 3, Whimsy 5
+#  - type: Sprite
+#    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#    state: tt_bros
+#
+#- type: entity
+#  parent: [ BROSTippyTrumpcard, CardBaseTippyTrumpSyndicate ]
+#  id: BROSTippyTrumpcardSyndicate
+#  suffix: BROS, Syndicate
+#  components:
+#  - type: SpawnOnTrigger
+#    proto: MobBros
+#
+#- type: entity
+#  parent: CardBaseTippyTrump
+#  id: SORBTippyTrumpcard
+#  suffix: SORB
+#  components:
+#  - type: Card
+#    name: SORB card. Robustness - 5, Validity - 3, Whimsy 1
+#  - type: Sprite
+#    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#    state: tt_sorb
+#
+#- type: entity
+#  parent: [ SORBTippyTrumpcard, CardBaseTippyTrumpSyndicate ]
+#  id: SORBTippyTrumpcardSyndicate
+#  suffix: SORB, Syndicate
+#  components:
+#  - type: SpawnOnTrigger
+#    proto: MobSorb
+#
+#- type: entity
+#  parent: CardBaseTippyTrump
+#  id: FOESTippyTrumpcard
+#  suffix: FOES
+#  components:
+#  - type: Card
+#    name: FOES card. Robustness - 2, Validity - 4, Whimsy 6
+#  - type: Sprite
+#    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#    state: tt_foes
+#
+#- type: entity
+#  parent: [ FOESTippyTrumpcard, CardBaseTippyTrumpSyndicate ]
+#  id: FOESTippyTrumpcardSyndicate
+#  suffix: FOES, Syndicate
+#  components:
+#  - type: SpawnOnTrigger
+#    proto: MobFoes
+#
+#- type: entity
+#  parent: CardBaseTippyTrump
+#  id: SEOFTippyTrumpcard
+#  suffix: SEOF
+#  components:
+#  - type: Card
+#    name: SEOF card. Robustness - 6, Validity - 4, Whimsy 2
+#  - type: Sprite
+#    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+#    state: tt_seof
+#
+#- type: entity
+#  parent: [ SEOFTippyTrumpcard, CardBaseTippyTrumpSyndicate ]
+#  id: SEOFTippyTrumpcardSyndicate
+#  suffix: SEOF, Syndicate
+#  components:
+#  - type: SpawnOnTrigger
+#    proto: MobSeof
 
 - type: entity
   parent: CardBaseTippyTrump

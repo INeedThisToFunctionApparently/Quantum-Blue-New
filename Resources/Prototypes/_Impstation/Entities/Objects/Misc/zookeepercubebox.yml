@@ -18,8 +18,8 @@
   id: RandomZookeeperCubeTable
   table: !type:GroupSelector
     children:
-    - id: FinfinCube
-      weight: 1
+#    - id: FinfinCube
+#      weight: 1
     - id: BananaDeerCube
       weight: 1
     - id: XenoCube

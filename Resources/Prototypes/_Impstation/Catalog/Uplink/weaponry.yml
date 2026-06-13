@@ -210,18 +210,18 @@
 #  categories:
 #  - UplinkWeaponry
 
-- type: listing
-  id: UplinkOuroBros
-  name: uplink-ourobros-name
-  description: uplink-ourobros-desc
-  productEntity: WeaponSpecialOuroBros
-  cost:
-    Telecrystal: 30
-  categories:
-  - UplinkWeaponry
-  conditions: # surplus exclusive
-  - !type:BuyerWhitelistCondition
-    makeHidden: true
-    whitelist:
-      components:
-      - SurplusBundle
+#- type: listing
+#  id: UplinkOuroBros
+#  name: uplink-ourobros-name
+#  description: uplink-ourobros-desc
+#  productEntity: WeaponSpecialOuroBros
+#  cost:
+#    Telecrystal: 30
+#  categories:
+#  - UplinkWeaponry
+#  conditions: # surplus exclusive
+#  - !type:BuyerWhitelistCondition
+#    makeHidden: true
+#    whitelist:
+#      components:
+#      - SurplusBundle
