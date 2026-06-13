@@ -1,4 +1,11 @@
 Entries:
+  - author: Sage-Jones
+    changes:
+      - type: Add
+        message: The Upmerge has arrived! This brings us up to date with Impstation as of May 30th, 2026
+    id: 129
+    time: '2026-06-13T08:27:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/151
   - author: MattFright
     changes:
       - type: Tweak
