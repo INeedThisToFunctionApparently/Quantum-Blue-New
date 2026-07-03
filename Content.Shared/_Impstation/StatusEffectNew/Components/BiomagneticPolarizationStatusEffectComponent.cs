@@ -10,7 +10,7 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._Impstation.StatusEffectNew;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(raiseAfterAutoHandleState: true)]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class BiomagneticPolarizationStatusEffectComponent : Component
 {
     /// <summary>
@@ -153,6 +153,8 @@ public sealed partial class BiomagneticPolarizationStatusEffectComponent : Compo
 
     [DataField, AutoNetworkedField]
     public bool Capped;
+    [DataField, AutoNetworkedField]
+    public bool LastCapped;
 }
 
 [Serializable, NetSerializable]
