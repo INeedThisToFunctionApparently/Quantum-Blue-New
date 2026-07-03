@@ -16,7 +16,6 @@
     - Meat
     - VimPilot
     - MultitoolDefibrillatorTarget # imp edit
-    - RecyclerGibbable # imp edit
   - type: Physics
   - type: Fixtures
     fixtures:

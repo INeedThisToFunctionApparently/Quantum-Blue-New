@@ -672,7 +672,6 @@
     - VimPilot
     - ChefPilot
     - MultitoolDefibrillatorTarget #imp
-    - RecyclerGibbable # imp
   - type: FlavorProfile
     flavors:
     - meaty

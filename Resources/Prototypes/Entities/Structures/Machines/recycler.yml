@@ -84,11 +84,6 @@
       params:
         volume: -3
     cutOffSound: false
-    damage: # imp addition, damage to ungibbed mobs
-      types:
-        Piercing: 5
-        Blunt: 5
-        Slash: 5
   - type: MaterialStorage
     insertOnInteract: false
   - type: Conveyor

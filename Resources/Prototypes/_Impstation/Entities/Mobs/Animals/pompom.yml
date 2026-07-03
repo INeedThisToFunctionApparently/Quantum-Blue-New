@@ -63,7 +63,6 @@
     tags:
     - Trash
     - MultitoolDefibrillatorTarget
-    - RecyclerGibbable
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:

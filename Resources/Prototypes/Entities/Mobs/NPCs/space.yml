@@ -509,7 +509,6 @@
     - ChefPilot
     - Meat
     - MultitoolDefibrillatorTarget
-    - RecyclerGibbable # imp
   - type: CombatMode
     combatToggleAction: ActionCombatModeToggleOff
   - type: Bloodstream
