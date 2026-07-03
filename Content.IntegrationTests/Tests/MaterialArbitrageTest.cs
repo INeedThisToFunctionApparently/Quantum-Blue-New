@@ -31,10 +31,7 @@ public sealed class MaterialArbitrageTest
     // These sets are for selectively excluding recipes from arbitrage.
     // You should NOT be adding to these. They exist here for downstreams and potential future issues.
     private readonly HashSet<string> _destructionArbitrageIgnore = [];
-    private readonly HashSet<string> _compositionArbitrageIgnore =
-    [
-        "PigIronCorpse"
-    ];// Imp change, some things are just worth less than their parts.
+    private readonly HashSet<string> _compositionArbitrageIgnore = [];
 
     [Test]
     public async Task NoMaterialArbitrage()
