@@ -6,6 +6,7 @@ using Content.Shared.Body.Events;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.Damage.Components;
+using Content.Shared.Gibbing.Events;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind;
 using Content.Shared.Mobs.Systems;
@@ -112,6 +113,11 @@ public sealed class BodySystem : SharedBodySystem
         }
 
         if (HasComp<GodmodeComponent>(bodyId))
+            return new HashSet<EntityUid>();
+
+        var attemptEv = new AttemptEntityGibCancelEvent(bodyId);
+        RaiseLocalEvent(bodyId, ref attemptEv);
+        if (attemptEv.Cancelled)
             return new HashSet<EntityUid>();
 
         var xform = Transform(bodyId);
