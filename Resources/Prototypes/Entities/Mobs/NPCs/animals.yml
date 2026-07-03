@@ -154,6 +154,7 @@
     - Bee
     - Trash
     - MultitoolDefibrillatorTarget #imp
+    - RecyclerGibbable # imp
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
@@ -452,6 +453,7 @@
     - VimPilot
     - MultitoolDefibrillatorTarget # imp
     - KodeEdible # imp
+    - RecyclerGibbable # imp
   - type: Destructible
     thresholds:
     - trigger:
@@ -637,6 +639,7 @@
     - CannotSuicide
     - VimPilot
     - MultitoolDefibrillatorTarget #imp
+    - RecyclerGibbable # imp
   - type: CanEscapeInventory
   - type: NpcFactionMember
     factions:
@@ -906,6 +909,7 @@
     - Trash
     - MultitoolDefibrillatorTarget #imp
     - Butterfly #imp, for butterfly orchid
+    - RecyclerGibbable # imp
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
@@ -2050,6 +2054,7 @@
     - Mouse
     - Meat
     - MultitoolDefibrillatorTarget #imp
+    - RecyclerGibbable # imp
   - type: Respirator
     damage:
       types:
@@ -2354,6 +2359,7 @@
     tags:
     - VimPilot
     - MultitoolDefibrillatorTarget #imp edit
+    - RecyclerGibbable # imp
   # imp edit start
   - type: GoobAbsorbable
     biomassRestored: 0.2
@@ -2432,6 +2438,7 @@
   - type: Tag
     tags:
     - MultitoolDefibrillatorTarget
+    - RecyclerGibbable
   - type: GoobAbsorbable
     biomassRestored: 0.1
   - type: Carriable
@@ -2510,6 +2517,7 @@
     tags:
     - VimPilot
     - MultitoolDefibrillatorTarget # imp
+    - RecyclerGibbable # imp
   - type: Destructible
     thresholds:
     - trigger:
@@ -3522,6 +3530,7 @@
     tags:
     - VimPilot
     - MultitoolDefibrillatorTarget
+    - RecyclerGibbable # imp
   # imp edit start
 
 - type: entity
@@ -3794,6 +3803,7 @@
     tags:
     - VimPilot
     - MultitoolDefibrillatorTarget
+    - RecyclerGibbable
   # imp edit end
 
 - type: entity
@@ -4033,6 +4043,7 @@
     - Hamster
     - Meat
     - MultitoolDefibrillatorTarget #imp
+    - RecyclerGibbable # imp
   - type: Respirator
     damage:
       types:

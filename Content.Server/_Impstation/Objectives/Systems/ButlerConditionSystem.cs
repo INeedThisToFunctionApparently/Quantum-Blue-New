@@ -40,6 +40,11 @@ public sealed class ButlerConditionSystem : EntitySystem
         if (!TryComp<MindComponent>(target, out var mind) || mind.CurrentEntity is not { } mindBody)
             return;
 
+        if (_player.TryGetSessionById(mind.UserId, out var session))
+            _audio.PlayGlobal(ent.Comp.TargetAudio, session);
+
+        _popup.PopupEntity(Loc.GetString(ent.Comp.ButlerSpawn), mindBody, mindBody);
+        // give the target the remote
         var coords = _transform.GetMapCoordinates(mindBody);
         _popup.PopupEntity(Loc.GetString(ent.Comp.ButlerSpawn), mindBody, mindBody);
         // give the target the remote
