@@ -1,6 +1,6 @@
 - type: antag
   id: Butler
-  name: ghost-role-information-butler-name
+  name: roles-antag-butler-name
   antagonist: false
   playTimeTracker: AntagButler
   setPreference: false
