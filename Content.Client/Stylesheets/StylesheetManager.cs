@@ -5,7 +5,7 @@ using Content.Client.Stylesheets.Stylesheets;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Shared.Reflection;
-using Content.Client._Impstation.Stylesheets; // imp
+
 
 namespace Content.Client.Stylesheets
 {
