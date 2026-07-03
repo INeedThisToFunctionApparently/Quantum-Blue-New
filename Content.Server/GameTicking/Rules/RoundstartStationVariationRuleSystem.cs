@@ -10,7 +10,7 @@ using Robust.Shared.Random;
 namespace Content.Server.GameTicking.Rules;
 
 /// <inheritdoc cref="RoundstartStationVariationRuleComponent"/>
-public sealed partial class RoundstartStationVariationRuleSystem : GameRuleSystem<RoundstartStationVariationRuleComponent> // Imp, partial
+public sealed class RoundstartStationVariationRuleSystem : GameRuleSystem<RoundstartStationVariationRuleComponent>
 {
     [Dependency] private readonly IRobustRandom _random = default!;
 
@@ -19,7 +19,6 @@ public sealed partial class RoundstartStationVariationRuleSystem : GameRuleSyste
         base.Initialize();
 
         SubscribeLocalEvent<StationPostInitEvent>(OnStationPostInit, after: new []{typeof(ShuttleSystem)});
-        SubscribeLocalEvent<RulePlayerJobsAssignedEvent>(OnPlayersSpawned); // Imp
     }
 
     protected override void Added(EntityUid uid, RoundstartStationVariationRuleComponent component, GameRuleComponent gameRule, GameRuleAddedEvent args)
