@@ -6,7 +6,6 @@ using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Shared.Reflection;
 
-
 namespace Content.Client.Stylesheets
 {
     public sealed class StylesheetManager : IStylesheetManager
