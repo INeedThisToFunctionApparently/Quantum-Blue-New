@@ -16,8 +16,6 @@ public interface IStylesheetManager
     /// Imp addition, it's the syndicate.
     Stylesheet SheetSyndicate { get; }
 
-    /// imp edit
-    Stylesheet SheetHeretic { get; }
 
     [Obsolete("Update to use SheetNanotrasen instead")]
     Stylesheet SheetNano { get; }
