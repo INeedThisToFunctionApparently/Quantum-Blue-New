@@ -156,17 +156,21 @@
     - id: ClothingOuterSuitAtmosFire
     - id: ClothingHeadHelmetAtmosFire
     - id: GasAnalyzer
+    - id: trayScanner # QB
     - id: MedkitOxygenFilled
     - id: HolofanProjector
     - id: RCD
     - id: RCDAmmo
+    - id: RPD # Funky RPD
     - id: AirGrenade
+    - id: ClothingHandsGlovesColorYellow # QB
 
 - type: entityTable
   id: FillAtmosphericsHardsuit
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitAtmos
+    - id: ClothingShoesBootsMag # QB
     - id: OxygenTankFilled
     - id: ClothingMaskBreath
 

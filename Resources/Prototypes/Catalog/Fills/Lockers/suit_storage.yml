@@ -185,6 +185,8 @@
     - id: ClothingOuterHardsuitSecurity
     - id: ClothingMaskGasSecurity #imp
     - id: JetpackSecurityFilled #imp
+    - id: ClothingShoesBootsSecurityMagboots # DeltaV - Added security magboots.
+      amount: 2
 
 #CE's hardsuit
 - type: entity

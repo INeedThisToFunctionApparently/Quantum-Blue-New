@@ -1,4 +1,86 @@
 Entries:
+  - author: Sage-Jones
+    changes:
+      - type: Add
+        message: The Upmerge has arrived! This brings us up to date with Impstation as of May 30th, 2026
+    id: 129
+    time: '2026-06-13T08:27:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/151
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: Some tiles have been changed based on feedback, others due to my own disatisfcation with them!
+    id: 128
+    time: '2026-06-11T23:36:16.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/144
+  - author: Toasterblast
+    changes:
+      - type: Tweak
+        message: The Flatpacker 1001 now matches its fellow machines.
+    id: 127
+    time: '2026-06-11T22:47:08.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/150
+  - author: RosySaturniidae
+    changes:
+      - type: Add
+        message: 3 new paramedic cosmetics
+      - type: Tweak
+        message: paramedic items should all be the same colors now
+    id: 126
+    time: '2026-06-08T23:37:20.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/141
+  - author: Ecramox
+    changes:
+      - type: Tweak
+        message: Chibi continues to get better in various small ways
+    id: 125
+    time: '2026-06-08T23:25:55.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/140
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Parameds and atmos techs get magboots in their lockers. Atmos also get insuls and t ray scanners. SPOILED!
+    id: 124
+    time: '2026-06-08T23:17:12.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/143
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: 'Elkridge: Chemists will be slightly less annoyed now.'
+      - type: Fix
+        message: 'Dash: All cameras are now properly named.'
+      - type: Tweak
+        message: 'Dash: Drones have earned their freedom.'
+      - type: Tweak
+        message: 'Asterisk: Xenoarcheologists will have a much easier time spacing their workplace now.'
+      - type: Tweak
+        message: 'Asterisk: The library now has everything they normally have.'
+      - type: Tweak
+        message: 'Asterisk: Public botany room was shrunk down in half. Don''t worry, the lizard survived.'
+    id: 123
+    time: '2026-06-02T04:15:07.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/139
+  - author: Ecramox
+    changes:
+      - type: Tweak
+        message: Chibi has not changed in any noticeable way but it has changed.
+    id: 122
+    time: '2026-05-30T07:27:17.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/133
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: Removed wizard rulebreakbait spells (mass guns and magic items)
+    id: 121
+    time: '2026-05-30T07:25:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/135
+  - author: soup4food
+    changes:
+      - type: Remove
+        message: disabled biomag
+    id: 120
+    time: '2026-05-30T07:24:17.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/136
   - author: DVD Player
     changes:
       - type: Fix
