@@ -697,7 +697,7 @@
   requiredMixerCategories:
     - Shake
   reactants:
-    BrosochloricBros:
+    PwrGame:
       amount: 1
     DoctorsDelight:
       amount: 1
@@ -705,7 +705,7 @@
       amount: 1
   products:
     GamersDelight: 3
-    
+
 - type: reaction
   id: CreamSoda
   requiredMixerCategories:

@@ -10,7 +10,7 @@
     Telecrystal: 5
   categories:
   - UplinkDisruption
-  - UplinkObjective
+#  - UplinkObjective
   conditions:
   - !type:BuyerObjectiveWhitelistCondition
     makeHidden: true
