@@ -19,5 +19,17 @@
     - HideContextMenu
     - Flashlight
   - type: UnpoweredFlashlight
-    manualToggle: false
+
+- type: entity
+  parent: PinpointerBase
+  id: PinpointerSlasherEffigy
+  name: effigy locator
+  description: A dedicated pinpointer tuned to the Slasher's blood effigy.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Pinpointer
+    targetName: slasher effigy
+  - type: Tag
+    tags:
+    - SlasherEffigyLocator
 

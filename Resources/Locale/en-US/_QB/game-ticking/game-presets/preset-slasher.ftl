@@ -1,5 +1,6 @@
 roles-antag-slasher-name = Slasher
 roles-antag-slasher-objective = Survive and terrorize the station.
+objective-issuer-slasher = [color=Crimson]The Shadows[/color]
 slasher-role-greeting = You are the Slasher.
 guide-entry-slasher = Slasher
 

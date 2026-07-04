@@ -506,7 +506,6 @@
       - type: OnDeathEntitySpawn
         entityPrototype: ShadowKudzu
         radius: 1
-      - type: NoGhoul
       - type: NoSacrifice
       - type: SlasherRole
         actions:
@@ -536,8 +535,6 @@
       briefing:
         text: slasher-role-greeting
         color: Crimson
-        guides:
-        - Slasher
         sound:
           path: /Audio/Items/Anomaly/shadow_crit.ogg
           params:
