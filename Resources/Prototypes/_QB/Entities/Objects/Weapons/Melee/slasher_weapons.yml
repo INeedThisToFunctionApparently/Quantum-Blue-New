@@ -62,7 +62,7 @@
     soundHit: !type:SoundCollectionSpecifier
       collection: MetalThud
   - type: Item
-    size: Ginormous
+    size: Huge
     sprite: Objects/Weapons/Melee/chainsaw.rsi
   - type: RefillableSolution
     solution: Welder

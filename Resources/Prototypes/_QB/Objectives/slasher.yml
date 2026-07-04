@@ -9,8 +9,6 @@
 - type: entity
   parent: BaseSlasherObjective
   id: SlasherPlaceEffigyObjective
-  name: slasher-objective-condition-place-effigy-title
-  description: slasher-objective-condition-place-effigy-description
   components:
   - type: Objective
     difficulty: 1
@@ -22,8 +20,6 @@
 - type: entity
   parent: BaseSlasherObjective
   id: SlasherPlaceMeathooksObjective
-  name: slasher-objective-condition-place-meathooks-title
-  description: slasher-objective-condition-place-meathooks-description
   components:
   - type: Objective
     difficulty: 1
@@ -36,8 +32,6 @@
 - type: entity
   parent: BaseSlasherObjective
   id: SlasherFeedSoulFragmentsObjective
-  name: slasher-objective-condition-feed-fragments-title
-  description: slasher-objective-condition-feed-fragments-description
   components:
   - type: Objective
     difficulty: 1.25

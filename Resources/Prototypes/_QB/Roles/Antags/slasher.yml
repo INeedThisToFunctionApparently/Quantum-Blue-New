@@ -25,7 +25,7 @@
     jumpsuit: ClothingUniformJumpsuitSlasher
     head: ClothingHeadHatSlasherCorpsoft
     mask: ClothingMaskSlasher
-    back: ClothingBackpackSatchel
+    back: ClothingBackpackDuffel
     pocket1: SlasherGearContainer
     ears: ClothingHeadsetSlasher
     gloves: ClothingHandsGlovesSlasher

@@ -493,7 +493,7 @@
     - prefRoles: [ Slasher ]
       max: 2
       playerRatio: 15
-      spawnerPrototype: SpawnPointLocationSlasherShuttle
+      spawnerPrototype: SpawnPointGhostSlasher
       startingGear: SlasherGear
       components:
       - type: FlashWeakness

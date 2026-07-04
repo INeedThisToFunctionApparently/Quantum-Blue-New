@@ -5,9 +5,10 @@
   suffix: Slasher
   components:
   - type: Sprite
+    sprite: Markers/jobs.rsi
     layers:
     - state: green
-    - state: syndicate
+    - state: prisoner
   - type: AntagSpawner
     prototype: MobHuman
   - type: SpawnPoint
@@ -26,6 +27,25 @@
       - state: green
       - state: prisoner
   - type: SlasherSpawnShuttleLocation
+
+- type: entity
+  categories: [ HideSpawnMenu, Spawner ]
+  parent: BaseAntagSpawner
+  id: SpawnPointGhostSlasher
+  name: slasher spawn point
+  suffix: Slasher
+  components:
+  - type: GhostRole
+    name: ghost-role-information-slasher-name
+    description: ghost-role-information-slasher-description
+    rules: ghost-role-information-slasher-rules
+    mindRoles:
+    - MindRoleSlasher
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: prisoner
 
 - type: entity
   id: SpawnPointLocationDeathMaze

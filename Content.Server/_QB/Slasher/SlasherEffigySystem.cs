@@ -32,6 +32,7 @@ using Content.Shared.QB.Slasher.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Map;
+using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Player;
@@ -860,7 +861,8 @@ public sealed class SlasherEffigySystem : EntitySystem
             if (TryComp<VisibilityComponent>(ent, out var visibility))
                 _visibility.SetLayer((ent.Owner, visibility), (ushort)VisibilityFlags.Normal);
 
-            _physics.SetCanCollide(ent.Owner, true);
+            if (HasComp<PhysicsComponent>(ent.Owner))
+                _physics.SetCanCollide(ent.Owner, true);
 
             _appearance.SetData(ent, SlasherEffigyVisuals.Status, SlasherEffigyStatus.Revealed);
 
@@ -886,7 +888,8 @@ public sealed class SlasherEffigySystem : EntitySystem
     {
         var visibility = EnsureComp<VisibilityComponent>(effigy);
         _visibility.SetLayer((effigy, visibility), HiddenEffigyVisibilityLayer);
-        _physics.SetCanCollide(effigy, false);
+        if (HasComp<PhysicsComponent>(effigy))
+            _physics.SetCanCollide(effigy, false);
     }
 
     /// <summary>

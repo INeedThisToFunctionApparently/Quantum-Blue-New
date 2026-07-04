@@ -25,6 +25,8 @@
         base:
           Hidden: { state: anom }
           Revealed: { state: pulse }
+  - type: Physics
+    canCollide: false
   - type: Fixtures
     fixtures:
       fix1:

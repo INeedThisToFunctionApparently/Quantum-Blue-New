@@ -78,7 +78,8 @@ public sealed class SlasherRoleSystem : EntitySystem
     /// <param name="args">Component startup event data.</param>
     private void OnStartup(Entity<SlasherRoleComponent> ent, ref ComponentStartup args)
     {
-        _eye.RefreshVisibilityMask(ent.Owner);
+        if (HasComp<EyeComponent>(ent.Owner)) //not having this causes a testfail btw
+            _eye.RefreshVisibilityMask(ent.Owner);
 
         // Preload and validate the shared death maze while the role is granted, not at death time.
         _deathTeleport.TryGetDeathMazeSpawn(out _, DeathMazeSpawnSelection.Any);
@@ -100,7 +101,9 @@ public sealed class SlasherRoleSystem : EntitySystem
     {
         // RefreshVisibilityMask would re-apply the Slasher visibility bit here,
         // so reset straight to the default eye mask instead.
-        _eye.SetVisibilityMask(ent.Owner, EyeComponent.DefaultVisibilityMask);
+        // not having this causes a test fail btw
+        if (TryComp<EyeComponent>(ent.Owner, out var eye)) 
+            _eye.SetVisibilityMask(ent.Owner, EyeComponent.DefaultVisibilityMask, eye);
 
         foreach (var action in ent.Comp.ActionEntities)
             _actions.RemoveAction(ent.Owner, action);

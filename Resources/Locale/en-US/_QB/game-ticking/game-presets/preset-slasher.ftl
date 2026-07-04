@@ -1,8 +1,36 @@
 roles-antag-slasher-name = Slasher
 roles-antag-slasher-objective = Survive and terrorize the station.
-objective-issuer-slasher = [color=Crimson]The Shadows[/color]
+objective-issuer-slasher = The Shadows
 slasher-role-greeting = You are the Slasher.
 guide-entry-slasher = Slasher
+ghost-role-information-slasher-name = Slasher
+ghost-role-information-slasher-description = Become the Slasher and complete the ritual aboard the shuttle.
+ghost-role-information-slasher-rules = You are an antagonist. Terrorize the crew and complete your ritual objectives.
+
+ent-ActionSlasherGainShroud = Vanish
+    .desc = Fade from view. Activating this ability causes you to bleed. Overly hostile intent will cause you to return.
+ent-ActionSlasherLoseShroud = Step Into View
+    .desc = Voluntarily return to visibility.
+ent-ActionSlasherRend = Rend
+    .desc = Tear through an adjacent wall, window, or door with your supernatural strength.
+ent-ActionSlasherPlaceMeathook = Plant Meathook
+    .desc = Sink a meathook into the floor at a target location.
+ent-ActionSlasherPlaceEffigy = Plant Effigy
+    .desc = Place your shared blood effigy at a target location.
+ent-ActionSlasherDarkStep = Dark Step
+    .desc = Teleport through darkness to a distant location.
+ent-ActionSlasherDarkHeal = Dark Heal
+    .desc = Mend your wounds while standing in darkness.
+ent-ActionSlasherLocateEffigy = Locate Effigy
+    .desc = Manifest a ritual locator in a temporary pocket while your effigy still stands.
+ent-ActionSlasherWeaponRecall = Weapon Recall
+    .desc = Recall your signature weapon back to your hand.
+ent-SlasherPlaceEffigyObjective = Place a blood effigy.
+    .desc = Establish your ritual anchor by placing your effigy once.
+ent-SlasherPlaceMeathooksObjective = Place 2 meat hooks.
+    .desc = Set up 2 hooks to begin harvesting victims.
+ent-SlasherFeedSoulFragmentsObjective = Feed soul fragments to your effigy.
+    .desc = Insert enough fragments to complete your ritual.
 
 slasher-round-end-slasher-major = Slasher Major - The ritual was completed.
 slasher-round-end-slasher-major-plural = Slasher Major - The ritual was completed.
