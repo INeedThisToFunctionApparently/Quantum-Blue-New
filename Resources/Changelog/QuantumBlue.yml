@@ -1,6 +1,13 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Remove
+        message: Research unlocks won't spam multiple channels anymore!
+    id: 134
+    time: '2026-07-05T05:16:50.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/159
+  - author: MattFright
+    changes:
       - type: Tweak
         message: Janitor, Chef, Botanist, Bartender and Zookeeper now all have each other's accesses in very low pop lobbies!
       - type: Tweak
