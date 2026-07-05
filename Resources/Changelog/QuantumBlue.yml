@@ -1,4 +1,11 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Added Atlas, a new 8-40 pop station! Featuring lots of zoos and a supermatter!
+    id: 132
+    time: '2026-07-05T02:49:48.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/157
   - author: rebe83
     changes:
       - type: Add
