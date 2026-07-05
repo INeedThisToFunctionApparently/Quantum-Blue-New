@@ -2,6 +2,15 @@ Entries:
   - author: MattFright
     changes:
       - type: Remove
+        message: Removed atmos hardsuits
+      - type: Remove
+        message: Removed oxy medkits and RCDs from the atmos tech locker
+    id: 135
+    time: '2026-07-05T05:18:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/160
+  - author: MattFright
+    changes:
+      - type: Remove
         message: Research unlocks won't spam multiple channels anymore!
     id: 134
     time: '2026-07-05T05:16:50.0000000+00:00'
