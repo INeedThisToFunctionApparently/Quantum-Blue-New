@@ -1,4 +1,13 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Fireaxes can now pry floor tiles!
+      - type: Tweak
+        message: All floor tiles have had their skeletons replaced with more axable bones.
+    id: 131
+    time: '2026-07-05T02:47:41.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/134
   - author: soup4food
     changes:
       - type: Add
