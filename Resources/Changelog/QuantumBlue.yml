@@ -1,6 +1,19 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Tweak
+        message: Janitor, Chef, Botanist, Bartender and Zookeeper now all have each other's accesses in very low pop lobbies!
+      - type: Tweak
+        message: All department heads that didn't previously have externals access, now do
+      - type: Tweak
+        message: Cargo techs have externals access now!
+      - type: Fix
+        message: Cyborgs have zoo access now
+    id: 133
+    time: '2026-07-05T05:15:51.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/158
+  - author: MattFright
+    changes:
       - type: Add
         message: Added Atlas, a new 8-40 pop station! Featuring lots of zoos and a supermatter!
     id: 132
