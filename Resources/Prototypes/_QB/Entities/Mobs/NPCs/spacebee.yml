@@ -56,16 +56,15 @@
     damage:
       types:
         Piercing: 6
-        Poison: 4
   - type: SolutionContainerManager
     solutions:
       melee:
         reagents:
-        - ReagentId: ChloralHydrate
+        - ReagentId: SpaceApitoxin
           Quantity: 80
   - type: MeleeChemicalInjector
     solution: melee
-    transferAmount: 4
+    transferAmount: 2
   - type: ReplacementAccent
     accent: xeno
   - type: InteractionPopup
@@ -96,7 +95,7 @@
   name: space bee
   parent: [ SimpleSpaceMobBase, FlyingMobBase ] # Not parented off of regular bees because then they're stuck with the respirator component
   id: MobBeeSpace
-  description: Nice to have, but you can't build a civilization on a foundation of scarlet honey alone.
+  description: Nice to have, but you can't build a civilization on a foundation of honey alone.
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -154,6 +153,10 @@
         Base: dead
   - type: Extractable
     grindableSolutionName: food
+    juiceSolution:
+      reagents:
+      - ReagentId: SpaceApitoxin
+        Quantity: 3
   - type: SolutionContainerManager
     solutions:
       food:
@@ -188,3 +191,11 @@
       - !type:GibBehavior
         recursive: false
   - type: AlwaysRevolutionaryConvertible
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh1.ogg
+    angle: 0
+    animation: WeaponArcStatic
+    damage:
+      types:
+        Piercing: 1
