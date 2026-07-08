@@ -1,4 +1,11 @@
 Entries:
+  - author: Sage-Jones
+    changes:
+      - type: Add
+        message: Added a plethora of hair styles!
+    id: 138
+    time: '2026-07-08T00:24:54.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/164
   - author: MattFright
     changes:
       - type: Add
