@@ -1,4 +1,13 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Atlas: The servers room by engineering has a crew monitoring server now, oops'
+      - type: Fix
+        message: 'Atlas: Moved some weird/buggy firelocks by the supermatter'
+    id: 139
+    time: '2026-07-08T19:14:01.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/167
   - author: Sage-Jones
     changes:
       - type: Add
