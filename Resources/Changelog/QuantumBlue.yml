@@ -1,4 +1,17 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Cargo can now purchase a TEG parts crate for 10k spesos!
+      - type: Add
+        message: Mappers can now add randomized station engines to their maps! Who knows what you'll be setting up...
+      - type: Tweak
+        message: Supermatter shard crates purchaseable from cargo now come with radiation collectors and plasma tanks
+      - type: Tweak
+        message: The supermatter shard cargo order now costs "only" 15k spesos (down from 40k)
+    id: 141
+    time: '2026-07-23T00:39:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/166
   - author: SoupTomat
     changes:
       - type: Tweak
