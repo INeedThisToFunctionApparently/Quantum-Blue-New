@@ -186,10 +186,10 @@
           state: icon
     - type: RandomSpawner
       rarePrototypes:
-        # - CrateEngineeringSingularityGenerator # QB comment
-        # - CrateEngineeringTeslaGenerator # QB comment
-        # - CrateEngineeringTeslaGroundingRod # QB comment
-        # - CrateEngineeringParticleAccelerator # QB comment
+        - CrateEngineeringSingularityGenerator
+        - CrateEngineeringTeslaGenerator
+        - CrateEngineeringTeslaGroundingRod
+        - CrateEngineeringParticleAccelerator
         - CrateRCD
         - CrateRPD # Imp
         - CrateEngineeringGear
@@ -203,10 +203,10 @@
         - CrateEngineeringCableMV
         - CrateEngineeringCableHV
         - CrateEngineeringCableBulk
-        # - CrateEngineeringSingularityContainment # QB comment
-        # - CrateEngineeringSingularityCollector # QB comment
-        # - CrateEngineeringTeslaCoil # QB comment
-        # - CrateEngineeringSingularityEmitter # QB comment
+        - CrateEngineeringSingularityContainment
+        - CrateEngineeringSingularityCollector
+        - CrateEngineeringTeslaCoil
+        - CrateEngineeringSingularityEmitter
         - CrateEngineeringGyroscope
         - CrateEngineeringMiniGyroscope
         - CrateEngineeringThruster
