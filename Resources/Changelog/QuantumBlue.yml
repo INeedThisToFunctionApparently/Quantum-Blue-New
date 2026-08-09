@@ -2,6 +2,13 @@ Entries:
   - author: keekee38
     changes:
       - type: Add
+        message: space pens exist in survival kits, and MREs have been replaced by smaller PSBs
+    id: 143
+    time: '2026-08-09T21:18:21.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/176
+  - author: keekee38
+    changes:
+      - type: Add
         message: >-
           space pens are now being ~~tested to determine if they increase workplace efficiency~~ sent out in survival
           boxes. NT cares!
