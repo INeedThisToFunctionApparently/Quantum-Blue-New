@@ -14,7 +14,7 @@
       map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
     - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: honeycomb-unshaded
+      state: honeycomb_unshaded
       shader: unshaded
     drawdepth: Objects
   - type: InteractionOutline
@@ -28,7 +28,10 @@
     solution: honeycomb
   - type: ExaminableSolution
     solution: honeycomb
+  - type: Physics
+    bodyType: Static
   - type: Transform
+    anchored: true
     noRot: true
   - type: ReactiveContainer
     solution: honeycomb
