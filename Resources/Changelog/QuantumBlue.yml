@@ -1,4 +1,13 @@
 Entries:
+  - author: Moodotsuki
+    changes:
+      - type: Tweak
+        message: Pebble has had a few tiny adjustments made; see the PR for the notes if you're curious!
+      - type: Tweak
+        message: Pebble's minimum population has changed from 0 to 8.
+    id: 144
+    time: '2026-08-10T04:18:57.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/177
   - author: keekee38
     changes:
       - type: Add
