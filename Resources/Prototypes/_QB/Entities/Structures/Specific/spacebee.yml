@@ -1,7 +1,7 @@
 - type: entity
   name: space honey comb
   id: SpaceHoneyComb
-  parent: BaseStructureDynamic
+  parent: BaseStructure
   description: Contains the space bees' most prized possession.
   components:
   - type: Clickable
@@ -26,6 +26,8 @@
     solution: honeycomb
   - type: RefillableSolution
     solution: honeycomb
+  - type: DrawableSolution
+    solution: honeycomb
   - type: ExaminableSolution
     solution: honeycomb
   - type: Physics
@@ -43,7 +45,7 @@
     utensil: Spoon
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 4
+    maxFillLevels: 5
     fillBaseName: fill-
   - type: ContainerContainer
     containers:
@@ -69,3 +71,28 @@
         density: 60
         mask:
         - MachineMask
+
+- type: entity
+  id: SpaceHoneyCombHalfFilled
+  parent: SpaceHoneyComb
+  suffix: HalfFull
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      honeycomb:
+        reagents:
+        - ReagentId: SpaceHoney
+          Quantity: 100
+
+- type: entity
+  id: SpaceHoneyCombFull
+  parent: SpaceHoneyComb
+  suffix: Full
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      honeycomb:
+        reagents:
+        - ReagentId: SpaceHoney
+          Quantity: 200
+  
