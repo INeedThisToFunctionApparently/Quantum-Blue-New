@@ -106,7 +106,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: ChloralHydrate
+      - ReagentId: Cryoxadone
         Quantity: 0.1
   - type: MovementAlwaysTouching
   - type: PressureImmunity
