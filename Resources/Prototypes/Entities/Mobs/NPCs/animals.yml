@@ -173,7 +173,7 @@
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
-  - type: ZombieImmune
+#  - type: ZombieImmune # QB
   - type: Destructible
     thresholds:
     - trigger:
