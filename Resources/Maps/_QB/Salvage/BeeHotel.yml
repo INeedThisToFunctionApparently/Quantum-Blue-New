@@ -4,7 +4,7 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 08/16/2026 02:06:55
+  time: 08/16/2026 02:57:53
   entityCount: 574
 maps: []
 grids:
@@ -1742,109 +1742,13 @@ entities:
   - uid: 271
     components:
     - type: Transform
-      pos: 6.922759,-6.621342
+      pos: 6.5745387,-6.330185
       parent: 1
-    - type: PluralName
-      nameOneOf: carpet
-      overrideName: carpet
-    - type: Physics
-      bodyStatus: InAir
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        throw-fixture:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          - BulletImpassable
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: Grammar
-      attributes:
-        indefinite: a tile of
-    - type: ThrownItem
-      playLandSound: True
-      landTime: 30758.4406937
-      thrownTime: 30758.4025749
-      thrower: invalid
   - uid: 272
     components:
     - type: Transform
-      pos: 7.2573247,-6.299321
+      pos: 7.0432887,-6.861435
       parent: 1
-    - type: PluralName
-      nameOneOf: carpet
-      overrideName: carpet
-    - type: Physics
-      bodyStatus: InAir
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        throw-fixture:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          - BulletImpassable
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: Grammar
-      attributes:
-        indefinite: a tile of
-    - type: ThrownItem
-      playLandSound: True
-      landTime: 30755.3599052
-      thrownTime: 30755.302578
-      thrower: invalid
 - proto: FloorDrain
   entities:
   - uid: 273
