@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 08/15/2026 17:07:56
-  entityCount: 572
+  time: 08/16/2026 02:06:55
+  entityCount: 574
 maps: []
 grids:
 - 1
@@ -535,7 +535,7 @@ entities:
   - uid: 56
     components:
     - type: Transform
-      pos: 7.6409574,2.0151172
+      pos: 7.8488817,2.0945
       parent: 1
 - proto: CableApcExtension
   entities:
@@ -1547,53 +1547,11 @@ entities:
       parent: 1
 - proto: CigPackVoid
   entities:
-  - uid: 242
+  - uid: 390
     components:
     - type: Transform
-      pos: 7.4332933,1.6073081
+      pos: 7.4738817,1.4851252
       parent: 1
-    - type: Physics
-      bodyStatus: InAir
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        throw-fixture:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          - BulletImpassable
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: ThrownItem
-      playLandSound: True
-      landTime: 30914.2688438
-      thrownTime: 30914.2357524
-      thrower: invalid
 - proto: ComfyChair
   entities:
   - uid: 243
@@ -1743,54 +1701,11 @@ entities:
       parent: 1
 - proto: EnergyDagger
   entities:
-  - uid: 265
+  - uid: 310
     components:
     - type: Transform
-      rot: 6.567570083773445 rad
-      pos: 7.3975916,2.2681236
+      pos: 7.4738817,2.641375
       parent: 1
-    - type: Physics
-      bodyStatus: InAir
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        throw-fixture:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          - BulletImpassable
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: ThrownItem
-      playLandSound: True
-      landTime: 30909.6235054
-      thrownTime: 30909.5690904
-      thrower: invalid
 - proto: FlippoEngravedLighter
   entities:
   - uid: 266
@@ -1807,166 +1722,21 @@ entities:
       parent: 1
 - proto: FloorCarpetItemCyan
   entities:
-  - uid: 268
-    components:
-    - type: Transform
-      pos: 7.540509,-3.450296
-      parent: 1
-    - type: PluralName
-      nameOneOf: carpet
-      overrideName: carpet
-    - type: Physics
-      bodyStatus: InAir
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        throw-fixture:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          - BulletImpassable
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: Grammar
-      attributes:
-        indefinite: a tile of
-    - type: ThrownItem
-      playLandSound: True
-      landTime: 30751.7777293
-      thrownTime: 30751.7359149
-      thrower: invalid
   - uid: 269
     components:
     - type: Transform
-      pos: 7.3406615,-2.177066
+      pos: 6.7082567,-2.9096699
       parent: 1
-    - type: PluralName
-      nameOneOf: carpet
-      overrideName: carpet
-    - type: Physics
-      bodyStatus: InAir
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        throw-fixture:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          - BulletImpassable
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: Grammar
-      attributes:
-        indefinite: a tile of
-    - type: ThrownItem
-      playLandSound: True
-      landTime: 30747.2422287
-      thrownTime: 30747.2025861
-      thrower: invalid
-  - uid: 270
+  - uid: 394
     components:
     - type: Transform
-      pos: 6.9901595,-2.766789
+      pos: 7.0051317,-2.2221699
       parent: 1
-    - type: PluralName
-      nameOneOf: carpet
-      overrideName: carpet
-    - type: Physics
-      bodyStatus: InAir
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        throw-fixture:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          - BulletImpassable
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: ThrownItem
-      hitQuantity: 1
-      playLandSound: True
-      landTime: 30749.5106147
-      thrownTime: 30749.4692505
-      thrower: invalid
-    - type: Grammar
-      attributes:
-        indefinite: a tile of
+  - uid: 397
+    components:
+    - type: Transform
+      pos: 7.3176317,-3.7377949
+      parent: 1
 - proto: FloorCarpetItemGreen
   entities:
   - uid: 271
@@ -2273,25 +2043,25 @@ entities:
       parent: 1
 - proto: MaterialWoodPlank1
   entities:
-  - uid: 304
+  - uid: 265
     components:
     - type: Transform
-      pos: -1.2373037,-0.7528944
+      pos: 6.4113817,2.504002
+      parent: 1
+  - uid: 270
+    components:
+    - type: Transform
+      pos: 7.6770067,-2.8784199
       parent: 1
   - uid: 305
     components:
     - type: Transform
-      pos: 8.568483,-7.694954
-      parent: 1
-  - uid: 306
-    components:
-    - type: Transform
-      pos: 6.5184536,2.2935226
+      pos: -1.3200817,0.36049885
       parent: 1
   - uid: 307
     components:
     - type: Transform
-      pos: -1.2998037,0.1221056
+      pos: -1.0700817,-0.8270011
       parent: 1
   - uid: 308
     components:
@@ -2301,22 +2071,17 @@ entities:
   - uid: 309
     components:
     - type: Transform
-      pos: 6.8465786,2.3560226
-      parent: 1
-  - uid: 310
-    components:
-    - type: Transform
-      pos: 7.4403286,-1.8246751
+      pos: 7.1613817,0.121580124
       parent: 1
   - uid: 311
     components:
     - type: Transform
-      pos: 7.1533213,-0.1122694
+      pos: 8.028824,-8.169994
       parent: 1
   - uid: 312
     components:
     - type: Transform
-      pos: 8.209108,-8.366829
+      pos: 8.435074,-7.5918694
       parent: 1
   - uid: 313
     components:
@@ -2326,27 +2091,37 @@ entities:
   - uid: 314
     components:
     - type: Transform
-      pos: 7.099733,-9.538704
+      pos: -1.6743097,-2.2980905
       parent: 1
   - uid: 315
     components:
     - type: Transform
-      pos: 6.787233,-9.304329
+      pos: 6.117579,6.5826416
       parent: 1
   - uid: 316
     components:
     - type: Transform
-      pos: -1.7280884,-2.1445434
+      pos: 5.976954,5.9420166
       parent: 1
-  - uid: 317
+  - uid: 391
     components:
     - type: Transform
-      pos: 6.098725,6.0340405
+      pos: 6.8332567,2.613377
       parent: 1
-  - uid: 318
+  - uid: 393
     components:
     - type: Transform
-      pos: 6.30185,6.6277905
+      pos: 7.1457567,-1.8627949
+      parent: 1
+  - uid: 573
+    components:
+    - type: Transform
+      pos: 6.9350734,-9.826244
+      parent: 1
+  - uid: 574
+    components:
+    - type: Transform
+      pos: 6.5288234,-9.560619
       parent: 1
 - proto: MysteryLighterBox
   entities:
@@ -2793,32 +2568,37 @@ entities:
       parent: 1
 - proto: ShardGlassReinforced
   entities:
-  - uid: 390
+  - uid: 304
     components:
     - type: Transform
-      pos: -1.6531718,4.4801593
+      pos: -1.7636344,4.772049
       parent: 1
-  - uid: 391
+  - uid: 306
     components:
     - type: Transform
-      pos: -1.827529,4.5712085
+      pos: -1.7011344,4.256424
       parent: 1
 - proto: SheetSteel1
   entities:
+  - uid: 242
+    components:
+    - type: Transform
+      pos: 5.9113817,2.566502
+      parent: 1
+  - uid: 268
+    components:
+    - type: Transform
+      pos: 7.5051317,0.059080124
+      parent: 1
+  - uid: 317
+    components:
+    - type: Transform
+      pos: -0.4294566,0.110498905
+      parent: 1
   - uid: 392
     components:
     - type: Transform
       pos: -0.4677341,-0.10664606
-      parent: 1
-  - uid: 393
-    components:
-    - type: Transform
-      pos: 5.9853907,2.424604
-      parent: 1
-  - uid: 394
-    components:
-    - type: Transform
-      pos: 7.4966264,-0.20670152
       parent: 1
   - uid: 395
     components:
@@ -2830,10 +2610,10 @@ entities:
     - type: Transform
       pos: 8.6979065,-5.357058
       parent: 1
-  - uid: 397
+  - uid: 418
     components:
     - type: Transform
-      pos: 8.0260315,0.04445553
+      pos: 8.067632,0.27783012
       parent: 1
 - proto: SignalButtonDirectional
   entities:
@@ -2964,53 +2744,11 @@ entities:
       parent: 1
 - proto: SyndicateFlippo
   entities:
-  - uid: 418
+  - uid: 318
     components:
     - type: Transform
-      pos: 7.4332933,1.8734041
+      pos: 7.5051317,1.8288752
       parent: 1
-    - type: Physics
-      bodyStatus: InAir
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        throw-fixture:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          - BulletImpassable
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: ThrownItem
-      playLandSound: True
-      landTime: 30912.4569855
-      thrownTime: 30912.4357542
-      thrower: invalid
 - proto: TableWood
   entities:
   - uid: 419
